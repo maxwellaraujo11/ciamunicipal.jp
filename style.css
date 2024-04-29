@@ -67,7 +67,7 @@ body {
         flex-direction: column;
     }
 
-    .patrocinio h3 {
+    .patrocinio > h3 {
         color: #f8f8f8;
         font-size: 1.4rem;
     }
@@ -80,7 +80,7 @@ body {
     }
 
     .segunda-pagina {
-        height: 100vh;
+        height: 70vh;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -94,7 +94,7 @@ body {
     }
 
    
-    .segunda-pagina h3 {
+    .segunda-pagina > h3 {
         color: #f8f8f8;
         font-size: 1.5rem;
         text-align: center;
@@ -114,21 +114,26 @@ body {
     }
 
     .terceira-pagina {
-        height: 100vh;
+        height: 100%;
     }
 
     .sequencia  {
-        width: 80%;
-        margin: 30px auto;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 40px;
 
     }
 
-    .sequencia h2 {
-        color: #c5c2c2;
+    .terceira-pagina .sequencia h5 {
+        color: #f9f9f9;
+        font-size: 1.4rem;
     }
 
     .sequencia p {
         color: #c5c2c2;
+        font-size: .9rem;
     }
 
     .detalhes {
