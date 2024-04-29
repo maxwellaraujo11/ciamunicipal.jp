@@ -63,16 +63,28 @@ body {
         
         color: #c5c2c2;
     }
-    
-    section {
+
+    .sequencia  {
         width: 80%;
+        margin: 0 auto;
+    }
+
+    .sequencia h2 {
+        color: #c5c2c2;
+    }
+
+    .sequencia p {
+        color: #c5c2c2;
+    }
+    
+    .detalhes {
+        width: 90%;
         margin: 0 auto;
         margin-bottom: 40px;
     }
     
     details {
      margin-top: 10px;
-     background-color: rgb(68, 66, 66);
      padding-left: 20px;
      border-radius: 5px;
     }
