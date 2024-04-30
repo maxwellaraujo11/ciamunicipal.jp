@@ -50,7 +50,83 @@ body {
 .primeira-pagina{
     height: 100%;
     width: 100%;
+    animation:  sliderBlur 1.5s forwards;
+    filter: blur(15px);
+
 }
+
+.primeira-pagina .title-logo {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #c5c2c2;;
+    position: relative;
+    left: -35%;
+}
+
+.primeira-pagina .sub-title {
+    font-size: 1.3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c5c2c2;
+}
+
+.title-event {
+    font-size: 4rem;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9f9f9;
+    font-family:cursive;
+}
+
+.box-patrocinio {
+    display: flex;
+    justify-content: center;
+    gap: 500px;
+    
+}
+
+.box-patrocinio .realizacao {
+    font-size: 1.8rem;
+    color:#c5c2c2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.realizadores {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.realizadores p {
+    font-size: 1rem;
+
+}
+
+.box-apoio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #c5c2c2;
+    font-size: 1.8rem;
+}
+
+.box-apoio .apoio {
+    font-size: 1rem;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
 
 .primeira-pagina .imgcapa {
     width: 85%;
@@ -218,6 +294,54 @@ details img {
     .primeira-pagina{
         height: 100vh;
     }
+
+    .primeira-pagina .title-logo {
+        font-size: 1.5rem;
+        left: -17%;
+    }
+    
+    
+    .title-event {
+        font-size: 2.2rem;
+        height: 450px;
+    }
+    
+    .box-patrocinio {
+        gap: 30px;
+        
+    }
+
+    .box-patrocinio .realizadores{
+        margin-top: 30px;
+    }
+    
+    .box-patrocinio .realizacao {
+        font-size: 1.3rem;
+        
+    }
+    
+    
+    .realizadores p {
+        font-size: .8rem;
+    
+    }
+    
+    .box-apoio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #c5c2c2;
+        font-size: 1.3rem;
+    }
+    
+    .box-apoio .apoio {
+        font-size: .8rem;
+        margin-top: 30px;
+        text-transform: uppercase;
+    }
+
+
+
 
     .primeira-pagina .imgcapa {
         width: 100%;
