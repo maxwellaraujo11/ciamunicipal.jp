@@ -125,6 +125,7 @@ body {
 
 
 details {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-inline: 15px;
     border-radius: 5px;
     background-color: #9ca0a0c1;
@@ -137,7 +138,7 @@ details {
 }
 
 details summary {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.2rem;
     color: #f8f8f8;
     display: flex;
@@ -164,7 +165,7 @@ details img {
 }
 
 .release {
-    color: #f9f9f9;
+    color: #2b2929;;
     font-family:'Times New Roman', Times, serif;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -183,6 +184,18 @@ details img {
 .ficha-tec-coreo span {
     font-size: 1.1rem;
     color: #f9f9f9;
+}
+
+.ficha-tec-coreo a {
+    color: #2b2929;
+    text-decoration: none;
+}
+
+.ficha-tec-coreo a:hover {
+    transition: .5s ease-in-out;
+    color: #c5c2c2;
+    text-decoration: underline;
+    transform: scale(1.2);
 }
 
 
