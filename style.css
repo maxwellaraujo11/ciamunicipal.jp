@@ -56,7 +56,7 @@ body {
     width: 85%;
     position: relative;
     left: 7%;
-    animation:  sliderBlur 3s forwards;
+    animation:  sliderBlur 1.5s forwards;
     filter: blur(15px);
     margin: 0 auto;
 }
