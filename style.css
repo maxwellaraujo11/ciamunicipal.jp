@@ -16,6 +16,29 @@
     }
   }
 
+  .slider-left {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 2s;
+    transform:  translateX(-100%);
+  }
+
+  .slider-right {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 2s;
+    transform:  translateX(100%);
+  }
+  
+  .show {
+    opacity: 1;
+    transition: all 2s;
+    filter: blur(0);
+    transform:  translateX(0);
+  }
+
+  
+
 body {
     background: linear-gradient(0deg, rgba(2,0,36,0.9501050420168067) 0%, rgba(34,11,54,1) 51%);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -46,10 +69,6 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    left: -50px;
-    animation:  slideLeft 1s forwards;
-    transition: ease-in-out 1s;
     width: 80%;
     margin: 0 auto;
 }
@@ -156,8 +175,14 @@ details img {
 }
 
 .ficha-tec-coreo {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 10px;
+    color: #2b2929;
+}
+
+.ficha-tec-coreo span {
+    font-size: 1.1rem;
+    color: #f9f9f9;
 }
 
 
