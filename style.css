@@ -60,7 +60,7 @@ body {
     width: 100%;
     animation:  sliderBlur 1.5s forwards;
     filter: blur(15px);
-
+    margin-bottom: 40px;
 }
 
 .primeira-pagina .title-logo {
@@ -149,6 +149,11 @@ body {
     animation:  sliderBlur 1.5s forwards;
     filter: blur(15px);
     margin: 0 auto;
+}
+
+.imgelenco {
+    height: 100vh;
+    background: url(./img/ciaMunicipal.jpeg);
 }
 
 
@@ -308,6 +313,7 @@ details img {
 
     .primeira-pagina{
         height: 100vh;
+        margin-bottom: 0;
     }
 
     .primeira-pagina .title-logo {
@@ -353,6 +359,7 @@ details img {
         font-size: .8rem;
         margin-top: 30px;
         text-transform: uppercase;
+    
     }
 
 
@@ -363,6 +370,14 @@ details img {
         height: 90vh;
         margin-top: 50px;
         left: 0;   
+    }
+
+    .imgelenco {
+        height: 35vh;
+        background: url(./img/ciaMunicipal.jpeg) no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
     }
    
     
