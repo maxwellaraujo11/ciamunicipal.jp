@@ -64,7 +64,7 @@ body {
 }
 
 .primeira-pagina .title-logo {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     margin-top: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -277,8 +277,9 @@ details img {
 }
 
 .ficha-tec-coreo a {
-    color: #2b2929;
-    text-decoration: none;
+    color: #f9f9f9;
+
+    text-decoration: underline;
 }
 
 .ficha-tec-coreo a:hover {
@@ -310,8 +311,8 @@ details img {
     }
 
     .primeira-pagina .title-logo {
-        font-size: 1.5rem;
-        left: -17%;
+        font-size: 2rem;
+        left: 0;
     }
     
     
