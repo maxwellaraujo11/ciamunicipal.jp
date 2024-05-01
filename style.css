@@ -48,7 +48,7 @@
   
 
 body {
-    background: linear-gradient(0deg, rgba(2,0,36,0.9501050420168067) 0%, rgba(34,11,54,1) 51%);
+    background: linear-gradient(0deg, rgba(2,0,36,0.9501050420168067) 0%, #220b36 51%);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 100%;
     position: relative;
@@ -58,7 +58,7 @@ body {
 .primeira-pagina{
     height: 100vh;
     width: 100%;
-    animation:  sliderBlur 1.5s forwards;
+    animation: sliderBlur 1.5s forwards;
     filter: blur(15px);
     margin-bottom: 40px;
 }
@@ -69,8 +69,8 @@ body {
     margin-top: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #c5c2c2;;
-    position: relative;
-    left: -35%;
+    position: absolute;
+    left: 10%;
     animation-name: downUp;
     transition: 2s;
     animation-duration: 2s;
@@ -128,7 +128,6 @@ body {
 
 .realizadores img {
     width: 120px;
-    
 }
 
 .box-apoio {
@@ -155,7 +154,7 @@ body {
 }
 
 .imgelenco {
-    height: 100vh;
+    height: 130vh;
     width: 100%;
     background: url(./img/ciaMunicipal.jpeg);
     background-position: center center;
@@ -231,7 +230,7 @@ details {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-inline: 15px;
     border-radius: 5px;
-    background-color: #9ca0a0c1;
+    background-color: #481872;
     width: 90%;
     border-radius: 5px;
     border: 1px solid black;
@@ -268,7 +267,7 @@ details img {
 }
 
 .release {
-    color: #2b2929;;
+    color: #7a7777eb;
     font-family:'Times New Roman', Times, serif;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -281,7 +280,7 @@ details img {
 .ficha-tec-coreo {
     font-size: 1.1rem;
     margin-bottom: 10px;
-    color: #2b2929;
+    color: #7a7777eb;;
 }
 
 .ficha-tec-coreo span {
@@ -297,10 +296,34 @@ details img {
 
 .ficha-tec-coreo a:hover {
     transition: .5s ease-in-out;
-    color: #c5c2c2;
+    color: #45364f;
     text-decoration: underline;
     transform: scale(1.2);
 }
+
+footer {
+    background-color: #2b1d44;
+    height: 300px;
+
+}
+
+footer .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+}
+
+footer .logos .logocia img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+footer .logos .realizadores {
+    margin-top: 0PX;
+}
+
 
 
 
@@ -326,6 +349,7 @@ details img {
 
     .primeira-pagina .title-logo {
         font-size: 2rem;
+        position: relative;
         left: 0;
     }
     
