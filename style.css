@@ -51,7 +51,9 @@ body {
     background: linear-gradient(0deg, rgba(2,0,36,0.9501050420168067) 0%, #220b36 51%);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 100%;
-    position: relative;
+    overflow-x: hidden;
+    
+    
 
 }
 
@@ -60,16 +62,20 @@ body {
     width: 100%;
     animation: sliderBlur 1.5s forwards;
     filter: blur(15px);
-    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .primeira-pagina .title-logo {
     font-size: 3rem;
     text-align: center;
-    margin-top: 30px;
+    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #c5c2c2;;
     position: absolute;
+    top: 10%;
     left: 10%;
     animation-name: downUp;
     transition: 2s;
@@ -88,20 +94,18 @@ body {
 .title-event {
     font-size: 4rem;
     text-align: center;
-    height: 400px;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #f9f9f9;
-    font-family:cursive;
+    font-family:cursive;   
 }
 
 .box-patrocinio {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 300px;
-    
     
 }
 
@@ -124,45 +128,16 @@ body {
     text-transform: uppercase;
 }
 
-
-
 .realizadores img {
     width: 120px;
 }
 
-.box-apoio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #c5c2c2;
-    font-size: 1.8rem;
-}
-
-.box-apoio img {
-    width: 120px;
-    margin-top: 50px;
-}
 
 
-.primeira-pagina .imgcapa {
-    width: 85%;
-    position: relative;
-    left: 7%;
-    animation:  sliderBlur 1.5s forwards;
-    filter: blur(15px);
-    margin: 0 auto;
-}
-
-.imgelenco {
-    height: 130vh;
+.imgelenco img {
     width: 100%;
-    background: url(./img/ciaMunicipal.jpeg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
 }
-
 
 
 .segunda-pagina {
@@ -173,6 +148,7 @@ body {
     align-items: center;
     width: 80%;
     margin: 0 auto;
+    
 }
 
 
@@ -313,15 +289,48 @@ footer .logos {
     justify-content: space-around;
     align-items: center;
     padding-top: 50px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 footer .logos .logocia img {
-    width: 60px;
+    width: 70px;
     border-radius: 50%;
 }
 
+.logocia {
+    
+    width: 300px;
+    
+}
+
+
+footer .logos .midias a {
+    color: #f9f9f9;
+    font-size: 2.5rem;
+    margin-inline: 20px;
+    transition: ease-in-out .5s;
+}
+
+footer .logos .midias a:hover {
+    transform: scale(1.2);
+}
+
+footer .logos .midias {
+   display: flex;
+   width: 300px;
+   justify-content: center;
+}
+
 footer .logos .realizadores {
-    margin-top: 0PX;
+    margin-top: 0px;
+    width: 250px;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
 
@@ -351,6 +360,7 @@ footer .logos .realizadores {
         font-size: 2rem;
         position: relative;
         left: 0;
+        top: 0;
     }
     
     
