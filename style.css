@@ -16,6 +16,14 @@
     }
   }
 
+  @keyframes downUp {
+    0% {
+       transform: translateY(0); /* move para a posição superior 0 (dentro do contêiner) */
+    } 100% {
+        transform: translateY(30px);
+    }
+  }
+
   .slider-left {
     opacity: 0;
     filter: blur(15px);
@@ -63,6 +71,12 @@ body {
     color: #c5c2c2;;
     position: relative;
     left: -35%;
+    animation-name: downUp;
+    transition: 2s;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .primeira-pagina .sub-title {
