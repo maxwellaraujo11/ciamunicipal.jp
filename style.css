@@ -28,14 +28,14 @@
     opacity: 0;
     filter: blur(15px);
     transition: all 2s;
-    transform:  translateX(-100px);
+    transform:  translateX(-20px);
   }
 
   .slider-right {
     opacity: 0;
     filter: blur(15px);
     transition: all 2s;
-    transform:  translateX(100px);
+    transform:  translateX(-20px);
   }
   
   .show {
@@ -51,7 +51,7 @@ body {
     background: linear-gradient(0deg, rgba(2,0,36,0.9501050420168067) 0%, #220b36 51%);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 100%;
-    overflow-x: hidden;
+    
     max-width: 100%;
 }
 
@@ -280,7 +280,7 @@ details img {
 footer {
     background-color: #2b1d44;
     height: 300px;
-    overflow-x: hidden;
+    
 }
 
 footer .logos {
@@ -371,14 +371,12 @@ footer p a:hover {
 
 @media  (max-width: 600px) {
 
-    body {
-        overflow-x: hidden;
-    }
+    
 
     .primeira-pagina{
         height: 100vh;
         margin-bottom: 0;
-        overflow-x: hidden;
+        
     }
 
     .primeira-pagina .title-logo {
@@ -390,15 +388,10 @@ footer p a:hover {
     
     
     .title-event {
-        font-size: 2.7rem;
+        font-size: 2.4rem;
         height: 400px;
     }
     
-    .box-patrocinio {
-        gap: 30px;
-        
-    }
-
     .box-patrocinio .realizadores{
         margin-top: 30px;
     }
@@ -411,56 +404,27 @@ footer p a:hover {
     
     .realizadores p {
         font-size: .8rem;
-    
     }
     
-    .box-apoio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: #c5c2c2;
-        font-size: 1.3rem;
-    }
-    
-    .box-apoio .apoio {
-        font-size: .8rem;
-        margin-top: 30px;
-        text-transform: uppercase;
-    
-    }
-
-
-
-
-    .primeira-pagina .imgcapa {
-        width: 100%;
-        height: 90vh;
-        margin-top: 50px;
-        left: 0;   
-    }
 
     .imgelenco {
         height: 35vh;
-        width: 100%;
     }
    
     
 
     .segunda-pagina p {
         font-size: 1.1rem;
+        
     }
 
     .segunda-pagina p span {
         font-size: 1.1rem;
     }
 
-    .terceira-pagina {
-        height: 100%;
-    }
-
-
     .terceira-pagina .sequencia h5 {
         font-size: 1.4rem;
+        
     }
 
     .sequencia p {
@@ -552,9 +516,7 @@ footer p a:hover {
 
 @media (min-width: 300px) and (max-height: 568px) {
 
-    body {
-        overflow-x: hidden;
-    }
+    
 
     .primeira-pagina{
         height: 80vh;
