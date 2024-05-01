@@ -256,7 +256,7 @@ details img {
 .ficha-tec-coreo {
     font-size: 1.1rem;
     margin-bottom: 10px;
-    color: #7a7777eb;;
+    color: #7a7777eb;
 }
 
 .ficha-tec-coreo span {
@@ -265,14 +265,14 @@ details img {
 }
 
 .ficha-tec-coreo a {
-    color: #f9f9f9;
+    color: #cac2c2eb;
 
     text-decoration: underline;
 }
 
 .ficha-tec-coreo a:hover {
     transition: .5s ease-in-out;
-    color: #45364f;
+    color: #f9f9f9;
     text-decoration: underline;
     transform: scale(1.2);
 }
@@ -280,6 +280,7 @@ details img {
 footer {
     background-color: #2b1d44;
     height: 300px;
+    overflow-x: hidden;
 
 }
 
@@ -331,6 +332,26 @@ hr {
     width: 80%;
     margin: 0 auto;
     margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 40px;
+    color: #c5c2c2;
+    
+}
+
+footer p a {
+    color: #f9f9f9;
+    font-weight: bold ;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: ease-in-out 1s;
+}
+
+footer p a:hover {
+    text-decoration: underline;
 }
 
 
@@ -416,9 +437,6 @@ hr {
 
     .imgelenco {
         height: 35vh;
-        background: url(./img/ciaMunicipal.jpeg) no-repeat;
-        background-position: center center;
-        background-size: cover;
         width: 100%;
     }
    
@@ -449,6 +467,80 @@ hr {
     
     details img {
         width: 100%;
+    }
+
+    footer {
+        height: 320px;
+    }
+
+
+    
+    footer .logos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    
+    footer .logos .logocia img {
+        width: 45px;
+        border-radius: 50%;
+        
+    }
+    
+    .logocia {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    
+    footer .logos .midias a {
+        font-size: 2rem;
+        margin-inline: 10px;
+    }
+    
+    hr {
+        margin-top: 15px;
+    }
+    
+    footer .logos .midias {
+       display: flex;
+       width: 300px;
+       justify-content: center;
+       align-items: center;
+       margin-bottom: 20px;
+    }
+    
+    footer .logos .realizadores {
+        margin-top: 0px;
+        width: 200px;
+    }
+
+    footer .logos .realizadores img {
+        width: 80px;
+        margin-top: 0px;
+    }
+
+    hr {
+        margin-bottom: 0px;
+    }
+    
+    footer p {
+        font-size: .7rem;
+        margin-top: 15px;
+    }
+    
+    footer p a {
+        color: #f9f9f9;
+        font-weight: bold ;
+        text-decoration: none;
+        font-size: .8rem;
+        transition: ease-in-out 1s;
+    }
+    
+    footer p a:hover {
+        text-decoration: underline;
     }
 
 }
@@ -531,7 +623,6 @@ hr {
         font-size: .9rem;
     }
 
-    
     
     details img {
         width: 100%;
