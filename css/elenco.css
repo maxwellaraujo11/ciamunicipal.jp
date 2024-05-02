@@ -15,9 +15,37 @@
     flex-direction: row;
     gap: 30px;
     justify-content: space-around;
-    overflow: hidden;
+    overflow-x: scroll;
     margin: 0 auto;
 }
+
+
+.coordenacao::-webkit-scrollbar {
+    height: 13px; /* largura da barra de rolagem */
+    width: 100px;
+    
+  }
+  
+  .coordenacao::-webkit-scrollbar-track {
+    background: none; /* cor de fundo do track */
+  }
+  
+  .coordenacao::-webkit-scrollbar-thumb {
+    background: #f0eded; /* cor do thumb */
+    border-radius: 8px; /* borda arredondada do thumb */
+    transition: 1s ease-in-out;
+    transform: scale(1.2);
+  }
+  
+  .coordenacao::-webkit-scrollbar-thumb:hover {
+    background: #504e4ed5; /* cor do thumb quando hover */
+    cursor: grab;
+  }
+
+
+
+
+
 
 
 .img-text {
