@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.galeria-elenco {
+    height: 100%;
+}
+
+.coordenacao {
+    width: 80%;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-around;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+.img-text {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.img-text p {
+    width: 240px;
+    height:320px;
+    text-align: justify;
+    font-size: 1.2rem;
+    transition: all ease-in-out 1s;
+    position: relative;
+    bottom: 380px;
+    left: -300px;
+}
+
+.img-text img {
+    width: 280px;
+    height: 360px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    transition: all ease-in-out 1s;
+}
+
+.img-text:hover img {
+    opacity: 0.4;
+}
+
+.box-coordenadores {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all ease-in-out 1s;
+    width: 320px;
+}
+
+.box-coordenadores:hover p {
+    transform: translateX(320px);
+}
+
+.coordenacao a {
+    text-decoration: none;
+    color: #e7e3e3;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.box-coordenadores:hover h4  {
+    text-decoration: underline;
+}
+
+
+
+@media  (max-width: 600px) {
+    .coordenacao {
+        width: 80%; /* Defina a largura total para ocupar a largura do dispositivo */
+        overflow-x: scroll;
+        height: auto; /* Ative a rolagem horizontal */
+        margin-bottom: 50px;
+
+      }
+
+      .coordenacao::-webkit-scrollbar {
+        height: 13px; /* largura da barra de rolagem */
+        margin-top: 40px;
+        
+      }
+      
+      .coordenacao::-webkit-scrollbar-track {
+        background: none; /* cor de fundo do track */
+      }
+      
+      .coordenacao::-webkit-scrollbar-thumb {
+        background: #f0eded; /* cor do thumb */
+        border-radius: 8px; /* borda arredondada do thumb */
+        transition: 1s ease-in-out;
+        transform: scale(1.2);
+      }
+      
+      .coordenacao::-webkit-scrollbar-thumb:hover {
+        background: #504e4ed5; /* cor do thumb quando hover */
+        cursor: grab;
+      }
+
+      .img-text {
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        height: 360px;
+        overflow: hidden;
+    }
+
+    .box-coordenadores .img-text h4 {
+        color: #e7e3e3;
+        display: flex;
+    }
+}
+

@@ -173,6 +173,7 @@ body {
 
 .terceira-pagina {
     height: 100%;
+    margin-bottom: 100px;
 }
 
 .sequencia  {
@@ -188,6 +189,12 @@ body {
     color: #f9f9f9;
     font-size: 2rem;
 }
+
+.sequencia h5 {
+    color: #f9f9f9;
+    font-size: 2rem;
+}
+
 
 .sequencia p {
     color: #c5c2c2;
