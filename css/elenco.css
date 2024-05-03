@@ -6,11 +6,12 @@
 
 .galeria-elenco {
     height: 100%;
+    margin-bottom: 40px;
 }
 
 .coordenacao {
     width: 80%;
-    height: 450px;
+    height: 410px;
     display: flex;
     flex-direction: row;
     gap: 25px;
@@ -35,7 +36,7 @@
   }
   
   .coordenacao::-webkit-scrollbar-thumb {
-    background: #f0eded; /* cor do thumb */
+    background: #979696; /* cor do thumb */
     border-radius: 8px; /* borda arredondada do thumb */
     transition: 1s ease-in-out;
     transform: scale(1.2);
@@ -114,6 +115,11 @@
 
 
 @media  (max-width: 600px) {
+    
+    .direcao {
+        overflow-x: scroll;
+    }
+    
     .coordenacao {
         width: 80%; /* Defina a largura total para ocupar a largura do dispositivo */
         overflow-x: scroll;
