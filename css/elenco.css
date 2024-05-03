@@ -19,11 +19,6 @@
     margin: 0 auto;
 }
 
-.direcao {
-  overflow-x: hidden !important;
-  gap: 15px;
-}
-
 
 .coordenacao::-webkit-scrollbar {
     height: 13px; /* largura da barra de rolagem */
@@ -115,11 +110,6 @@
 
 
 @media  (max-width: 600px) {
-    
-    .direcao {
-        overflow-x: scroll;
-    }
-    
     .coordenacao {
         width: 80%; /* Defina a largura total para ocupar a largura do dispositivo */
         overflow-x: scroll;
