@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(2,0,36,0.9501050420168067) 0%, #220b36 51%);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contanier-elenco {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 70%;
+    margin: 40px auto;
+    gap: 40px;
+}
+
+.contanier-elenco a {
+    color: aliceblue;
+    font-size: 4rem;
+    position: fixed;
+    
+    left: 50px;
+}
+
+.contanier-elenco img {
+    width: 500px;
+    border-radius: 5px;
+}
+
+.nome-title h2 {
+    font-size: 4rem;
+    color: rgb(182, 185, 188);
+}
+
+.nome-title .funcao {
+    font-size: 2rem;
+    position: relative;
+    top: -25px;
+    color: rgb(216, 218, 220);
+}
+
+
+.box-text p {
+    font-size: 1.3rem;
+    text-align: justify;
+    color: rgb(216, 218, 220);
+    margin-top: 25px;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    .contanier-elenco {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 85%;
+    }
+
+    .contanier-elenco a {
+        color: aliceblue;
+        font-size: 2rem;
+        position: fixed;
+        left: 20px;
+    }
+
+    .contanier-elenco img {
+        width: 100%;
+    }
+
+    .nome-title h2 {
+        font-size: 2.5rem;
+    }
+
+    .nome-title .funcao {
+        font-size: 1.5rem;
+    }
+
+    .box-text p {
+        font-size: 1.3rem;
+        text-align:left;
+    }
+}
+
+
