@@ -9,6 +9,7 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+
 .contanier-elenco {
     display: flex;
     flex-direction: row-reverse;
@@ -27,6 +28,28 @@ body {
 .contanier-elenco img {
     width: 500px;
     border-radius: 5px;
+    position: relative;
+    left: 30px;
+    animation: slideLeft 2s forwards;
+}
+
+@keyframes slideLeft {
+    to {
+      left: 0; /* move para a posição superior 0 (dentro do contêiner) */
+    }
+  }
+
+  @keyframes slideRight{
+    to {
+      left: 0; /* move para a posição superior 0 (dentro do contêiner) */
+    }
+  }
+
+.box-text {
+    position: relative;
+    left: -30px;
+    transition: ease-in-out 1s;
+    animation: slideRight 2s forwards;
 }
 
 .nome-title h2 {
