@@ -5,43 +5,57 @@
 }
 
 .galeria-elenco {
-    height: 90%;
+    height: 100%;
+    width: 80%;
     margin-bottom: 40px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
 }
 
 .coordenacao {
-  width: 90%;
   height: 410px;
   display: flex;
   flex-direction: row;
   gap: 25px;
-  overflow-x: scroll;
   margin: 0 auto;
+  animation: slider 40s infinite linear;
+}
+
+@keyframes slider {
+  from {
+     transform: translateX(0%);
+  } to {
+     transform: translateX(-100%);
+  }
+  
 }
 
 
-.coordenacao::-webkit-scrollbar {
-    height: 13px; /* largura da barra de rolagem */
+/*.coordenacao::-webkit-scrollbar {
+    height: 13px; 
     width: 100px;
     
   }
   
   .coordenacao::-webkit-scrollbar-track {
-    background: none; /* cor de fundo do track */
+    background: none; 
   }
   
   .coordenacao::-webkit-scrollbar-thumb {
-    background: #979696; /* cor do thumb */
-    border-radius: 8px; /* borda arredondada do thumb */
+    background: #979696; 
+    border-radius: 8px; 
     transition: 1s ease-in-out;
     transform: scale(1.2);
   }
   
   .coordenacao::-webkit-scrollbar-thumb:hover {
-    background: #504e4ed5; /* cor do thumb quando hover */
+    background: #504e4ed5; 
     cursor: grab;
   }
+
+  */
 
 
 
@@ -112,8 +126,6 @@
 
 @media  (max-width: 600px) {
     .coordenacao {
-        width: 80%; /* Defina a largura total para ocupar a largura do dispositivo */
-        overflow-x: scroll;
         margin-bottom: 50px;
         height: auto;
       }

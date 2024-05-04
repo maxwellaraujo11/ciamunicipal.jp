@@ -27,14 +27,14 @@
   .slider-left {
     opacity: 0;
     filter: blur(15px);
-    transition: all 2s;
+    transition: all 1s;
     transform:  translateX(-20px);
   }
 
   .slider-right {
     opacity: 0;
     filter: blur(15px);
-    transition: all 2s;
+    transition: all 1s;
     transform:  translateX(-20px);
   }
   
