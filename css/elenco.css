@@ -110,6 +110,7 @@
 .box-coordenadores h4 {
     color: #e7e3e3;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .box-coordenadores:hover p {
@@ -158,17 +159,10 @@
         cursor: grab;
       }
 
-      .img-text {
-        display: flex;
-        flex-direction: column;
-        width: 280px;
-        height: 360px;
-        overflow: hidden;
-    }
 
     .box-coordenadores .img-text h4 {
         color: #e7e3e3;
-        display: flex;
+        
     }
 }
 
