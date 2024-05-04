@@ -14,14 +14,13 @@ body {
     flex-direction: row-reverse;
     width: 70%;
     margin: 40px auto;
-    gap: 40px;
+    gap: 25px;
 }
 
 .contanier-elenco a {
     color: aliceblue;
     font-size: 4rem;
     position: fixed;
-    
     left: 50px;
 }
 
@@ -47,9 +46,8 @@ body {
     font-size: 1.3rem;
     text-align: justify;
     color: rgb(216, 218, 220);
-    margin-top: 25px;
+    margin-top: 20px;
 }
-
 
 
 
@@ -64,8 +62,10 @@ body {
     .contanier-elenco a {
         color: aliceblue;
         font-size: 2rem;
-        position: fixed;
-        left: 20px;
+        position: absolute;
+        left: 40px;
+        top: 10px;
+        
     }
 
     .contanier-elenco img {
@@ -84,6 +84,7 @@ body {
         font-size: 1.3rem;
         text-align:left;
     }
+
 }
 
 
