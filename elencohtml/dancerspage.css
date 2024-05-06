@@ -7,13 +7,15 @@
 body {
     background: linear-gradient(0deg, rgba(2,0,36,0.9501050420168067) 0%, #220b36 51%);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100%;
 }
 
 
 .contanier-elenco {
     display: flex;
     flex-direction: row-reverse;
-    width: 70%;
+    width: 80%;
+    max-width: 1280px;
     margin: 40px auto;
     gap: 25px;
 }
@@ -27,6 +29,7 @@ body {
 
 .contanier-elenco img {
     width: 500px;
+    height: 600px;
     border-radius: 5px;
     position: relative;
     left: 30px;
@@ -71,6 +74,15 @@ body {
     color: rgb(216, 218, 220);
     margin-top: 20px;
 }
+
+@media (min-width: 601px) and  (max-width: 1280px) {
+    .contanier-elenco {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 85%;
+    }
+}
+ 
 
 
 
