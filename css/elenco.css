@@ -14,6 +14,7 @@
     overflow-x: hidden;
 }
 
+
 .coordenacao {
   height: 410px;
   display: flex;
@@ -35,35 +36,6 @@
   }
   
 }
-
-
-/*.coordenacao::-webkit-scrollbar {
-    height: 13px; 
-    width: 100px;
-    
-  }
-  
-  .coordenacao::-webkit-scrollbar-track {
-    background: none; 
-  }
-  
-  .coordenacao::-webkit-scrollbar-thumb {
-    background: #979696; 
-    border-radius: 8px; 
-    transition: 1s ease-in-out;
-    transform: scale(1.2);
-  }
-  
-  .coordenacao::-webkit-scrollbar-thumb:hover {
-    background: #504e4ed5; 
-    cursor: grab;
-  }
-
-  */
-
-
-
-
 
 
 
@@ -136,8 +108,7 @@
       }
 
 
-
-      .coordenacao::-webkit-scrollbar {
+    .coordenacao::-webkit-scrollbar {
         height: 13px; /* largura da barra de rolagem */
         
       }

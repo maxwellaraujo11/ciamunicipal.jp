@@ -18,3 +18,4 @@ slideright.forEach((element) => myObserver.observe(element))
 window.onload = function() {
   document.body.style.overflowX = 'hidden';
 };
+
