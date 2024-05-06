@@ -183,7 +183,10 @@ nav a:hover {
 .terceira-pagina {
     height: 100%;
     margin-bottom: 100px;
-    padding-top: 100px;
+}
+
+#primeiro-ato {
+    padding-top: 80px;
 }
 
 #galeria {
@@ -215,10 +218,19 @@ nav a:hover {
     font-size: 1rem;
 }
 
+
+.terceira-pagina h4 {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+
 .detalhes {
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 40px;
 }
 
 
