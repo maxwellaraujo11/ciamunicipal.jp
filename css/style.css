@@ -459,6 +459,10 @@ footer p a:hover {
         font-size: .9rem;
     }
 
+    #galeria {
+        padding-top: 0px;
+    }
+
     
     
     details img {
