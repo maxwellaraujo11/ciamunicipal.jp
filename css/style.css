@@ -55,7 +55,6 @@ body {
     background: linear-gradient(0deg, rgba(2,0,36,0.9501050420168067) 0%, #220b36 51%);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 100%;
-    
     max-width: 100%;
 }
 
@@ -64,25 +63,54 @@ nav {
     height: 80px;
     background-color: #220b36;
     position: fixed;
-    padding: 0 auto;
+    z-index: 9;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
-    z-index: 9;
 }
 
-nav a {
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+nav ul li {
+        list-style: none;
+        padding: 0px 10px;
+        
+}
+
+nav ul li a {
     display: inline-block;
-    flex-direction: row;
     text-decoration: none;
     color: #f9f9f9;
     font-size: 1.5rem;
     transition:  ease-in-out 1s;
+    background-color: aqua;
 }
 
 nav a:hover {
     color: #8f8d8d;
+}
+
+.dropdown-menu {
+    position: absolute;
+    display: none;
+    background-color: #220b36;
+    transition:  ease-in-out 1s;
+    border: #f9f9f9 1px solid;
+    border-top: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a{
+    display: block;
+    font-size: 1.2rem;
+    padding: 10px 5px;
 }
 
 .primeira-pagina{
