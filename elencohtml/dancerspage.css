@@ -87,6 +87,16 @@ body {
         display: flex;
         flex-direction: column-reverse;
         width: 85%;
+        margin-top: 80px;
+    }
+
+    .contanier-elenco a {
+        color: aliceblue;
+        font-size: 2rem;
+        position: absolute;
+        left: 40px;
+        top: 30px;
+        
     }
 }
  
@@ -99,7 +109,7 @@ body {
         display: flex;
         flex-direction: column-reverse;
         width: 85%;
-        margin-top: 80PX;
+        margin-top: 80px;
     }
 
     .contanier-elenco a {

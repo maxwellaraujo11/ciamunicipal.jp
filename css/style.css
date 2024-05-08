@@ -426,12 +426,14 @@ footer p a:hover {
 
 
 
+@media  (min-width: 601px) {
 
+}
 
 
 @media  (max-width: 600px) {
 
-        .primeira-pagina{
+    .primeira-pagina{
         height: 100vh;
         margin-bottom: 0;
         
