@@ -8,6 +8,8 @@ html {
     scroll-behavior: smooth;
 }
 
+/* -------------------------- ANIMAÇÕES ---------------------------  */
+
 @keyframes slideLeft {
     to {
       left: 0; /* move para a posição superior 0 (dentro do contêiner) */
@@ -27,6 +29,8 @@ html {
         transform: translateY(30px);
     }
   }
+
+  /* ---------------------------------- CLASSES DE ANIMAÇÕES  --------------------------------*/
 
   .slider-left {
     opacity: 0;
@@ -57,6 +61,8 @@ body {
     height: 100%;
     max-width: 100%;
 }
+
+/* ------------------------------------------ NAVEGAÇÃO CABEÇALHO ------------------------------- */
 
 nav {
     width: 100%;
@@ -114,6 +120,8 @@ nav a:hover {
     width: 100px;
 }
 
+/* ---------------------------------------- PRIMEIRA PARTE AREA DE APRESENTAÇÃO DO EVENTO  ------------------------*/
+
 .primeira-pagina{
     height: 100vh;
     width: 100%;
@@ -138,6 +146,8 @@ nav a:hover {
     color: #f9f9f9;
     font-family:cursive;  
     line-height: 3rem;
+    animation:  downUp 3s  alternate infinite;
+    transition: ease-in-out;
     
 }
 
@@ -183,6 +193,8 @@ nav a:hover {
 
 }
 
+/* ----------------------------------------- AREA VOLTADA PARA FICHA TECNICA  -------------------------------------*/
+
 
 .segunda-pagina {
     height: 100vh;
@@ -216,6 +228,10 @@ nav a:hover {
     color: #f9f9f9;
 }
 
+
+/* ------------------------------------- AREA VOLTADA PARA APRESENTÇÃO DA ORDEM */
+
+
 .terceira-pagina {
     height: 100%;
     margin-bottom: 100px;
@@ -229,6 +245,12 @@ nav a:hover {
     padding-top: 100px;
 }
 
+
+.terceira-pagina .sequencia h5 {
+    color: #f9f9f9;
+    font-size: 2rem;
+}
+
 .sequencia  {
     margin: 0 auto;
     display: flex;
@@ -236,11 +258,6 @@ nav a:hover {
     flex-direction: column;
     margin-bottom: 40px;
 
-}
-
-.terceira-pagina .sequencia h5 {
-    color: #f9f9f9;
-    font-size: 2rem;
 }
 
 .sequencia h5 {
@@ -264,11 +281,14 @@ nav a:hover {
 }
 
 
+
+
+/* --------------------------------------------------- TUDO QUE ENVOLVE A TAG DETAILS E SUMMARY  */
+
 .detalhes {
     width: 90%;
     margin: 0 auto;
 }
-
 
 
 details {
@@ -345,6 +365,11 @@ details img {
     text-decoration: underline;
     transform: scale(1.2);
 }
+
+
+
+
+/* -------------------------------------------------------------------AREA DO FOOTER  */
 
 footer {
     background-color: #2b1d44;
@@ -424,12 +449,7 @@ footer p a:hover {
 
 
 
-
-
-@media  (min-width: 601px) {
-
-}
-
+/* ------------------------------------------------ AJUSTES PARA O RESPONSIVO */
 
 @media  (max-width: 600px) {
 
@@ -514,7 +534,7 @@ footer p a:hover {
 
     
     footer .logos .logocia img {
-        width: 45px;
+        width: 35px;
         border-radius: 50%;
         
     }
@@ -574,6 +594,8 @@ footer p a:hover {
     }
 
 }
+
+/* ----------------------------------------- RESPONSIVIDADE PARA DISPOSITIVOS COM LARGURA DE 300PX E ALTURA DE 568PX  */
 
 
 @media (min-width: 300px) and (max-height: 568px) {
