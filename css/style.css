@@ -132,11 +132,18 @@ nav a:hover {
     text-align: center;
     height: 450px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #f9f9f9;
     font-family:cursive;  
+    line-height: 3rem;
     
+}
+
+.title-event p {
+    font-size: 1.5rem;
+    font-family:  Verdana, sans-serif;
 }
 
 .box-patrocinio {
@@ -424,7 +431,7 @@ footer p a:hover {
 
 @media  (max-width: 600px) {
 
-    .primeira-pagina{
+        .primeira-pagina{
         height: 100vh;
         margin-bottom: 0;
         
@@ -434,7 +441,9 @@ footer p a:hover {
         padding-top: 80px;
     }
 
-    
+    #primeira-sessao, #segunda-sessao {
+        padding-top: 0px;
+    }
 
     
     .title-event {
