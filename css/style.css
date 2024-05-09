@@ -465,7 +465,7 @@ footer p a:hover {
     }
 
     #primeira-sessao, #segunda-sessao {
-        padding-top: 0px;
+        padding-top: 0;
     }
 
     
@@ -499,7 +499,7 @@ footer p a:hover {
     }
 
     .segunda-pagina {
-        margin-top: 50px;
+        margin-bottom: 100px;
     }
    
 
