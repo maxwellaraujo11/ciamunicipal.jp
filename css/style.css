@@ -464,8 +464,13 @@ footer p a:hover {
         padding-top: 80px;
     }
 
-    #primeira-sessao, #segunda-sessao {
-        padding-top: 0;
+    #primeira-sessao {
+        padding-top: 80px;
+        
+    }
+
+    #segunda-sessao {
+        padding-top: 80px;
     }
 
     
