@@ -458,6 +458,7 @@ footer p a:hover {
 @media  (min-width: 600px) and (max-width: 1000px) {
     nav ul li a {
         font-size: 1.3rem;
+        width: 130px;
     }
 }
 
