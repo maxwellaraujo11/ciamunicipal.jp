@@ -472,6 +472,11 @@ footer p a:hover {
         font-size: 2.4rem;
         height: 400px;
     }
+
+    .title-event p {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
     
     .box-patrocinio .realizadores{
         margin-top: 30px;
