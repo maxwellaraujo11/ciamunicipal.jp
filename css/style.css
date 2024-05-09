@@ -321,9 +321,9 @@ details summary::-webkit-details-marker {
    display: none;
 }
 
-details summary img {
-    width: 15px;
-    height: 20px;
+details summary i  {
+    font-size: 15px;
+    padding: 5px 0px;
 }
 
 details img {
