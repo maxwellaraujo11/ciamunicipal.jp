@@ -77,8 +77,7 @@ nav {
 nav ul {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
-    
+    margin: 0 auto;  
 }
 
 nav ul li {
@@ -92,7 +91,7 @@ nav ul li a {
     color: #f9f9f9;
     font-size: 1.5rem;
     transition:  ease-in-out 1s;
-    width: 100px;
+    width: 130px;
     height: 40px;
     text-align: center;
 }
@@ -117,7 +116,7 @@ nav a:hover {
 .dropdown-menu a{
     display: block;
     font-size: 1.3rem;
-    width: 100px;
+    width: 135px;
 }
 
 /* ---------------------------------------- PRIMEIRA PARTE AREA DE APRESENTAÇÃO DO EVENTO  ------------------------*/
@@ -257,7 +256,6 @@ nav a:hover {
     align-items: center;
     flex-direction: column;
     margin-bottom: 40px;
-
 }
 
 .sequencia h5 {
@@ -270,7 +268,6 @@ nav a:hover {
     color: #c5c2c2;
     font-size: 1rem;
 }
-
 
 .terceira-pagina h4 {
     width: 80%;
@@ -460,6 +457,7 @@ footer p a:hover {
         font-size: 1.3rem;
         width: 130px;
     }
+
 }
 
 @media  (max-width: 600px) {
