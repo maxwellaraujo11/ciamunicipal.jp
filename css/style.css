@@ -453,6 +453,10 @@ footer p a:hover {
         width: 130px;
     }
 
+    footer {
+        height: 320px;
+    }
+
 }
 
 @media  (max-width: 600px) {
