@@ -353,7 +353,7 @@ details img {
 
 footer {
     background-color: #2b1d44;
-    height: 300px;
+    height: 320px;
     margin-top: 40px;
     
 }
@@ -369,14 +369,12 @@ footer .logos {
 }
 
 footer .logos .logocia img {
-    width: 70px;
+    width: 150px;
     border-radius: 50%;
 }
 
 .logocia {
-    
     width: 300px;
-    
 }
 
 
@@ -400,6 +398,19 @@ footer .logos .midias {
 footer .logos .realizadores {
     margin-top: 0px;
     width: 250px;
+}
+
+.realizadores {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.realizadores img {
+    width: 120px;
 }
 
 hr {
@@ -427,6 +438,8 @@ footer p a {
 footer p a:hover {
     text-decoration: underline;
 }
+
+
 
 
 
@@ -483,26 +496,6 @@ footer p a:hover {
     #segunda-sessao {
         padding-top: 80px;
     }
-
-    
-    .title-event {
-        font-size: 2.7rem;
-        height: 400px;
-    }
-
-    .title-event p {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-    
-    .box-patrocinio .realizadores{
-        margin-top: 30px;
-    }
-    
-    .box-patrocinio .realizacao {
-        font-size: 1.3rem;
-        
-    }
     
     
     .realizadores p {
@@ -544,7 +537,7 @@ footer p a:hover {
     }
 
     footer {
-        height: 320px;
+        height: 300px;
     }
 
 
@@ -558,8 +551,8 @@ footer p a:hover {
 
     
     footer .logos .logocia img {
-        width: 35px;
-        border-radius: 50%;
+        width: 60px;
+        border-radius: 0;
         
     }
     
@@ -570,7 +563,7 @@ footer p a:hover {
     
     
     footer .logos .midias a {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-inline: 10px;
     }
     
