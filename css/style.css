@@ -66,40 +66,6 @@ body {
 
 /* ------------------------------------------ NAVEGAÇÃO CABEÇALHO ------------------------------- */
 
-nav {
-  width: 100%;
-  height: 80px;
-  position: fixed;
-  z-index: 9;
-  display: flex;
-  align-items: center;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-nav ul li {
-  list-style: none;
-}
-
-nav ul li a {
-  display: inline-block;
-  text-decoration: none;
-  color: #f9f9f9;
-  font-size: 1.5rem;
-  transition: ease-in-out 1s;
-  width: 130px;
-  height: 40px;
-  text-align: center;
-}
-
-nav a:hover {
-  color: #8f8d8d;
-}
-
 .dropdown-menu {
   position: absolute;
   display: none;
@@ -548,10 +514,6 @@ footer p a:hover {
     text-align: center;
   }
 
-  .mobile-bg {
-    background-image: url("/img/mobile.jpg") !important;
-  }
-
   .cards {
     display: block !important;
     flex-direction: column !important;
@@ -745,10 +707,6 @@ footer p a:hover {
   /* Garantir alinhamento correto do menu */
   .nav-link {
     text-align: center;
-  }
-
-  .mobile-bg {
-    background-image: url("/img/mobile.jpg") !important;
   }
 
   .cards {
