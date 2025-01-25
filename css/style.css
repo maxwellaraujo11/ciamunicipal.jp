@@ -700,7 +700,7 @@ footer p a:hover {
   }
 
   .mobile-bg {
-    background-attachment: scroll; /* Remover o efeito de parallax nos dispositivos móveis */
+    background-attachment: scroll !important; /* Remover o efeito de parallax nos dispositivos móveis */
     background-size: cover; /* Garante que a imagem cubra 100% da tela */
     background-position: center;
     height: 100vh; /* Garante que o fundo ocupe toda a altura da tela */
