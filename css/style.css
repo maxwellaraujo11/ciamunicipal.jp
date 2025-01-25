@@ -456,7 +456,7 @@ footer p a:hover {
 
 @media (max-width: 600px) {
   /* Ajusta o menu colapsado */
-  .navbar-collapse.show {
+  .navbar-collapse {
     background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
     position: absolute;
     top: 0;
@@ -512,15 +512,6 @@ footer p a:hover {
   /* Garantir alinhamento correto do menu */
   .nav-link {
     text-align: center;
-  }
-
-  .mobile-bg {
-    background-attachment: scroll; /* Remover o parallax nos dispositivos móveis */
-    background-size: cover; /* Garantir que a imagem cubra toda a área */
-    background-position: center; /* Manter a imagem centralizada */
-    height: 100vh; /* Garantir que a div ocupe 100% da altura */
-    position: relative;
-    z-index: 1;
   }
 
   .cards {
@@ -659,32 +650,35 @@ footer p a:hover {
 /* ----------------------------------------- RESPONSIVIDADE PARA DISPOSITIVOS COM LARGURA DE 300PX E ALTURA DE 568PX  */
 
 @media (min-width: 300px) and (max-width: 568px) {
-  /* Ajusta o menu colapsado */
-  .navbar-collapse.show {
-    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
-    position: absolute;
+  /* Corrigir o z-index do menu */
+  /* Estilo do menu quando expande */
+  .navbar-collapse {
+    position: absolute; /* Para garantir que o menu ocupe toda a tela */
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100vh; /* Ocupa a altura total da tela */
-    z-index: 1000; /* Coloca o menu abaixo do botão */
-    padding: 1rem;
+    width: 100%; /* Garante que o menu ocupe toda a largura */
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.8
+    ); /* Pode ajustar a cor de fundo para seu gosto */
+    z-index: 1050; /* Garantir que o menu sobreponha outros elementos */
     display: flex;
-    flex-direction: column; /* Links em coluna */
-    align-items: center; /* Centraliza os links */
-    justify-content: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza os itens do menu */
+    align-items: center; /* Centraliza os itens verticalmente */
   }
 
-  .navbar-toggler {
-    position: relative;
-    z-index: 1100; /* Maior que o menu */
-  }
-
-  /* Alinhar os links centralizados */
   .navbar-nav {
     display: flex;
-    flex-direction: column; /* Coluna no mobile */
-    align-items: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Organiza os itens de menu verticalmente */
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Certificando-se que o botão de hambúrguer funcione */
+  .navbar-toggler {
+    z-index: 1060; /* Garante que o botão de hambúrguer esteja acima do menu */
   }
 
   .navbar-nav .nav-link {
@@ -700,31 +694,9 @@ footer p a:hover {
     color: white !important; /* Garante que o link ativo também tenha a cor branca */
   }
 
-  /* Corrigir o z-index do menu */
-  .navbar-collapse {
-    position: relative;
-    z-index: 1050;
-    padding: 0;
-    margin: 0;
-  }
-
-  /* Adicionar um background para o menu dropdown */
-  .navbar-collapse {
-    background-color: white; /* ou outra cor de sua preferência */
-  }
-
   /* Garantir alinhamento correto do menu */
   .nav-link {
     text-align: center;
-  }
-
-  .mobile-bg {
-    background-attachment: scroll; /* Remover o parallax nos dispositivos móveis */
-    background-size: cover; /* Garantir que a imagem cubra toda a área */
-    background-position: center; /* Manter a imagem centralizada */
-    height: 100vh; /* Garantir que a div ocupe 100% da altura */
-    position: relative;
-    z-index: 1;
   }
 
   .cards {
