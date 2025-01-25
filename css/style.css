@@ -105,6 +105,14 @@ body {
 
 /* ----------------------------------------- AREA VOLTADA PARA FICHA TECNICA  -------------------------------------*/
 
+.mobile-bg {
+  background-image: url("/img/primeiro_plano.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Garante que a div ocupe toda a altura da tela */
+}
+
 .segunda-pagina {
   height: 80vh;
   display: flex;
@@ -697,6 +705,13 @@ footer p a:hover {
   /* Garantir alinhamento correto do menu */
   .nav-link {
     text-align: center;
+  }
+
+  .mobile-bg {
+    background-attachment: scroll; /* Remover o efeito de parallax nos dispositivos móveis */
+    background-size: cover; /* Garante que a imagem cubra 100% da tela */
+    background-position: center;
+    height: 100vh; /* Garante que o fundo ocupe toda a altura da tela */
   }
 
   .cards {
