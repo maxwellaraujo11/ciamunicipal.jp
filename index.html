@@ -1,685 +1,704 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="A mais nova companhia de dança do nordeste.">
-    <meta property="og:title" content="Companhia Municipal de Dança de João Pessoa">
-    <meta property="og:image" content="C:\Users\maxwe\OneDrive\Área de Trabalho\relase-ciamunipal\img\logo 1.svg">
+    <meta
+      name="description"
+      content="A mais nova companhia de dança do nordeste."
+    />
+    <meta
+      property="og:title"
+      content="Companhia Municipal de Dança de João Pessoa"
+    />
+    <meta
+      property="og:image"
+      content="C:\Users\maxwe\OneDrive\Área de Trabalho\relase-ciamunipal\img\logo 1.svg"
+    />
 
-    <link rel="icon" href="/img/logo 1.svg" type="image/x-icon">
+    <link rel="icon" href="/img/logo 1.svg" type="image/x-icon" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512..." crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/elenco.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512..."
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/elenco.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>CMD - João Pessoa</title>
-    <link rel="icon" href=".//img/logo 1.svg" type="image/png">
+    <link rel="icon" href=".//img/logo 1.svg" type="image/png" />
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JF7EVBHVK5"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JF7EVBHVK5"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-JF7EVBHVK5');
-</script>
-</head>
-<body>
-
+      gtag("config", "G-JF7EVBHVK5");
+    </script>
+  </head>
+  <body>
     <!-- ----------------- AREA DO MENU DE NAVEGAÇÃO ----------->
-    <nav>
-        <ul>
-           <li> <a href="#inicio">Início</a></li>    
-           <li><a href="#segunda-sessao">Programação</a></li> 
-           <li><a href="#galeria">Elenco</a></li>
-        </ul>
-    </nav>   <!--    ---------------- FIM MENU DE NAVEGAÇÃO ------------------->
+
+    <header id="#inicio">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-body">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarExample01"
+            aria-controls="navbarExample01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#inicio"
+                  >Início</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#segunda-sessao">Repertório</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#galeria">Sobre nós</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+
+      <!-- Background image -->
+      <div
+        class="p-5 text-center bg-image"
+        style="
+          background-image: url('/img/primeiro_plano.JPG');
+          height: 100vh;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+      >
+        <div
+          class="mask"
+          style="
+            background-color: rgba(0, 0, 0, 0.6);
+            height: 100vh;
+            width: 100%;
+          "
+        >
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+              <h1 class="mb-3">Companhia Municipal</h1>
+              <h4 class="mb-3">de Dança de Joao Pessoa</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Background image -->
+    </header>
+    <!--    ---------------- FIM MENU DE NAVEGAÇÃO ------------------->
 
     <!-- ----------------- AREA DE APRESENTAÇÃO ------------------>
-    
 
-    <section class="imgelenco" id="inicio">   <!-- ----------------- IMAGEM DE TODO O ELENCO ------------------->
-      <img src="./img/ciaMunicipal.jpeg" alt="">
+    <section class="terceira-pagina slider-right" id="segunda-sessao">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active justify-content-center d-flex bg-black"
+          >
+            <img
+              src="/img/sivuca.png"
+              class="d-block w-75 img-fluid width-img"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block top-0 pt-5 mt-5">
+              <h2>Poesia do Som</h2>
+              <p>Uma Homenagem ao maestro Sivuca.</p>
+            </div>
+          </div>
+          <div class="carousel-item bg-black">
+            <img
+              src="/img/cordel.png"
+              class="d-block w-75 mx-auto width-img"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block top-0 pt-5 mt-5">
+              <h2>Cordel</h2>
+              <p>Coreografia de Evana Arruda</p>
+            </div>
+          </div>
+          <div class="carousel-item bg-black">
+            <img
+              src="/img/gala.png"
+              class="d-block w-75 mx-auto width-img"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block top-0 pt-5 mt-5">
+              <h5>Gala Clássica e Contemporânea</h5>
+              <p>Uma volta ao mundo em 60 minutos de muita dança.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <h2 class="text-center mt-5 text-light">
+        Click nas fotos para saber mais.
+      </h2>
+
+      <!-- CARDS DOS RERPERTORIOS -->
+      <div
+        class="text-center d-flex d-md-flex d-block justify-content-center gap-4 mt-5 cards"
+      >
+        <div class="card mt-3 cards-item" style="width: 18rem">
+          <img src="/img/sivuca.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">Uma homenagem ao Maestro Sivuca</p>
+          </div>
+          <button type="button" class="btn btn-dark btn-lg w-75 mb-2 mx-auto">
+            Leia mais...
+          </button>
+        </div>
+
+        <div class="card mt-3 cards-item" style="width: 18rem">
+          <img src="/img/cordel.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">Um obra que mostra a força do nordeste.</p>
+          </div>
+          <button type="button" class="btn btn-dark btn-lg w-75 mb-2 mx-auto">
+            Leia mais...
+          </button>
+        </div>
+
+        <div class="card mt-3 cards-item" style="width: 18rem">
+          <img src="/img/gala.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">Do classico ao contemporâneo</p>
+          </div>
+          <button type="button" class="btn btn-dark btn-lg w-75 mb-2 mx-auto">
+            Leia mais...
+          </button>
+        </div>
+
+        <div class="card mt-3 cards-item" style="width: 18rem">
+          <img src="/img/temporamor.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">Coreografia de Lucas Mendes</p>
+          </div>
+          <button type="button" class="btn btn-dark btn-lg w-75 mb-2 mx-auto">
+            Leia mais...
+          </button>
+        </div>
+      </div>
     </section>
 
-    <section class="segunda-pagina slider-left">  <!-- ----------------- AREA DA FICHA TECNICA ----------->
-        <h3>Ficha Técnica</h3>
-        <p>  
-            <span>Diretor Geral da Funjope:</span> Marcus Alves <br>
-            <span>Diretor adjunto:</span> Antônio Alcantara <br>
-            <span>Coordenação de dança:</span> Geovan Conceição <br>
-            <span>Assistente da divisão de dança:</span> Jack Keysy <br>
-            <span>Direção da Cia:</span> Stella Paula <br>
-            <span>Professores:</span> Denilce Regina, Evana Arruda<br>
-            <span>Coreógrafos:</span> Evana Arruda<br>
-            <span>Ensaiadores:</span> Denilce Regina e Evana Arruda<br>
-            <span>Elenco:</span> Aline Ferreira, Ana Maria Barroso, Débora Duany, Eduardo Lima, 
-            Gabriel Morais, Jasmim Machado, Joalisson Candido, Lyedson Fidelis, Maria Luiza Pires, Maxwell Araújo, 
-            Rhuan Ramires, Tâmara Marinara. <br>
-            <span>Iluminação:</span> Aline Montenegro<br>
-            <span>Desenvolvedor do Programa:</span> Maxwell Araujo<br>
-            <span>Fotos do elenco:</span> André Pimentel<br>
-        </p>
-    </section>  <!-- FIM SEGUNDA PAGINA-->
+    <div class="sequencia" id="galeria">
+      <!-- ----------------- ANUNCIO DO ELENCO DE CORRDENADORES ----------->
+      <h5>Coordenação da cia</h5>
+      <p>Clique nas fotos para Conhecer mais</p>
+    </div>
 
-    
+    <div class="indicador-scroll">
+      <h4>
+        Role para o lado
+        <i class="fas fa-chevron-right"></i>
+      </h4>
+    </div>
 
-        
-        <section class="terceira-pagina slider-right" id="segunda-sessao"> 
-
-
-            <div class="sequencia">  <!-- ----------------- ANUNCIO DA SESSÃO ----------->
-                <h5>Programação</h5>
-                <p>Clique nas setas para saber mais</p>
+    <section class="galeria-elenco">
+      <!--------------- COORDENAÇÃO CIA ----------------------->
+      <div class="coordenacao">
+        <div class="box-coordenadores">
+          <a href="./elencohtml/stella.html">
+            <div class="img-text">
+              <img
+                src="https://images.pexels.com/photos/23285860/pexels-photo-23285860.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+              <p>
+                Brasileira, natural de João Pessoa, Brasil. Seu percurso é
+                marcado por uma paixão contínua pela arte da dança e um
+                compromisso inabalável com sua disseminação e ensino. Desde os
+                primeiros passos em 1975 com José Enoch. Saiba mais..
+              </p>
             </div>
-        
-            <h4>1° Ato</h4>
-        
-                <div class="detalhes">  <!-- ----------------- ORDEM DO PRIMEIRO ATO  // SEGUNDA SESSÃO ----------->
+            <!-- FIM IMG TEXT-->
+          </a>
+          <h4>Stella Paula</h4>
+        </div>
+        <!-- STELLA PAULA -->
 
+        <div class="box-coordenadores">
+          <a href="./elencohtml/evana.html">
+            <div class="img-text">
+              <img
+                src="https://images.pexels.com/photos/23285895/pexels-photo-23285895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
 
-                    <details>
-                        <summary>
-                            Variação Masc Esmeralda
-                            <i class="fas fa-chevron-right"></i>
-                        </summary>
-                        <img src="/img/var-gabriel.jpeg" alt="">
-                        <p class="release">
-                            La Esmeralda é um balé em três atos e cinco cenas, 
-                            inspirado no romance Notre-Dame de Paris de Victor Hugo, 
-                            de 1831 , originalmente coreografado por Jules Perrot com 
-                            música de Cesare Pugni , com cenários de William Grieve e figurinos de Mme. Copère.
-                        </p>
-                        <p class="ficha-tec-coreo">
-                            <span>Coreografia:</span> Jules Perrot<br>
-                            <span>Música:</span> esare Pugni<br>
-                            <span>Bailarino:</span> Gabriel Morais<br>
-                        </p>
-                    </details>  <!--- GABRIEL VARIAÇÃO-->
-                    
-                    <details>
-                        <summary>
-                            Pas de Deux Diana e Actéon
-                            <i class="fas fa-chevron-right"></i>
-                        </summary>
-                        <img src="https://i.pinimg.com/736x/cf/02/ba/cf02ba65b6ba5b3a40da710e06e30564.jpg" alt="">
-                        <p class="release">
-                            "Actéon era um garoto que caçava cervos nas montanhas e era 
-                            filho do rei Cadmo. Diana era uma rainha conhecida como a 
-                            rainha caçadora. Havia um vale cheio de ciprestes de pinheiros, 
-                            lugar onde a rainha era consagrada."
-                        </p>
-                        <p class="ficha-tec-coreo">
-                            <span>Coreografia:</span> jules perrot<br>
-                            <span>Ensaiadores:</span> Luzemberg Santana e Denilce Regina<br>
-                            <span>Música:</span> Cesare Pugni<br>
-                            <span>Bailarinos:</span>  
-                            <a href="https://www.instagram.com/aninhadancebarroso?igsh=MTE4cm9hb2NmcW42OQ==">Ana Maria Barraso</a> e
-                            <a href="https://www.instagram.com/eduardolimaoff/">Eduardo Lima</a><br>
-        
-                        </p>
-                    </details> <!--- ---------------PDD EDUARDO E ANINHA ----------------------->
-        
-                    <details>
-                        <summary>
-                            Variação Paquita
-                            <i class="fas fa-chevron-right"></i>
-                        </summary>
-                        <img src="/img/palco/paquita.jpeg" alt="">
-                        <p class="release">
-                            O Ballet Paquita é um ballet de 2 atos e 3 cenas e se ambienta na 
-                            Espanha durante a ocupação do exército de Napoleão. Os personagens 
-                            principais da trama são Paquita, uma jovem cigana, e o Conde Lucien d’Hervilly, um general francês.
-                        </p>
-                        <p class="ficha-tec-coreo">
-                            <span>Coreografia:</span> Joseph Mazilier<br>
-                            <span>Música:</span> Edouard Delvedez e Ludwig Minkus<br>
-                            <span>Bailarino:</span> Lyedson Fidelis<br>
-        
-                        </p>
-                    </details>  <!--- PAQUITA LYEDSON-->
-        
-                    <details>
-                        <summary>
-                            Suíte de Carmen
-                            <i class="fas fa-chevron-right"></i>
-                        </summary>
-                        <img src="/img/palco/carmem.jpg" alt="">
-                        <p class="release">
-                            "Suíte de Carmen", onde no ballet é geralmente montada 
-                            em apenas um ato. Pra quem não sabe, o termo "suíte" 
-                            se refere a uma espécie de resumo de uma obra Músical extensa, 
-                            com duração média de 1 hr a 1,5 hr. No caso de Carmen, foram criadas 
-                            várias coreografias diferentes, em sua grande maioria no 
-                            estilo moderno ou contemporâneo, e cada coreógrafo da uma ênfase 
-                            diferente no arranjo feito por Shchedrin.
-                        </p>
-                        <p class="ficha-tec-coreo">
-                            <span>Coreografia:</span> Marius Petipa <br>
-                            <span>Ensaiadores:</span> Luzemberg Santana e Denilce Regina<br>
-                            <span>Música:</span> Jules Massenet<br>
-                            <span>Bailarina:</span> <a href="https://www.instagram.com/deboraduany_/">Debora Duanny</a><br>
-        
-                        </p>
-        
-                    </details>   <!----------------------- DEBORA DUANNY --------------------------------->
-        
-                    <details>
-                        <summary>
-                            Variação Espada
-                            <i class="fas fa-chevron-right"></i>
-                        </summary>
-                        <img src="/img/palco/espada.jpg" alt="">
-                        <p class="release">
-                            A variação Espada esta dentro do ballet de repertório Dom Quixote.
-                        </p>
-                        <p class="ficha-tec-coreo">
-                            <span>Foto:</span> André Pimentel <br>
-                            <span>Coreografia:</span> Marius Petipa <br>
-                            <span>Ensaiadores:</span> Luzemberg Santana e Denilce Regina<br>
-                            <span>Música:</span> Jules Massenet<br>
-                            <span>Bailarino:</span> <a href="https://www.instagram.com/joalissoncandido/">Joalisson Candido</a><br>
-        
-                        </p>
-        
-                    </details>   <!----------------------- JOALISSON CANDIDO --------------------------------->
-        
-                    <details>
-                        <summary>
-                            Variação Mercedes
-                            <i class="fas fa-chevron-right"></i>
-                        </summary>
-                        <img src="/img/palco/mercedes.jpg" alt="">
-                        <p class="release">
-                            Mercedes é a grande amada do toureiro Espada, e amiga de Kitri e Basílio. 
-                        </p>
-                        <p class="ficha-tec-coreo">
-                            <span>Coreografia:</span> Marius Petipa e Alexander Gorsky. <br>
-                            <span>Ensaiadores:</span> Luzemberg Santana e Denilce Regina<br>
-                            <span>Música:</span> Ludwing Minkus <br>
-                            <span>Bailarina:</span> <a href="https://www.instagram.com/tamara_teofilo/">Tâmara Marinara</a><br>
-        
-                        </p>
-        
-                    </details>       <!----------------------- TÂMARA MARINARA --------------------------------->
-        
-                    <details>
-                        <summary>
-                            Grand Pas de deux Chamas de Paris
-                            <i class="fas fa-chevron-right"></i>
-                        </summary>
-                        <img src="/img/palco/chmas.jpg" alt="">
-                        <p class="release">
-                            Um grupo de revolucionários, sob a liderança de Philippe, 
-                            quer derrubar a monarquia e fundar a república. Gaspar 
-                            e seus filhos, Jeanne e Jacques, se juntam ao grupo depois 
-                            de serem agredidos por caçadores que acompanhavam o Marquês 
-                            de Beauregard. Em uma festa no Palácio de Versalhes, a monarquia 
-                            pretende acabar com a revolução com a ajuda da Prússia. Diane Mireille 
-                            e Antoine Mistral, atores que participavam da festa, não deixam isso 
-                            acontecer: Mistral descobre o plano e acaba morto, Mireille avisa os 
-                            revolucionários. O palácio é invadido pela multidão e Teresa, uma mulher 
-                            basca participante dos protestos de rua dos sans-culottes, leva um 
-                            tiro de um dos oficiais. Mesmo assim, os revoltosos alcançam o seu objetivo.
-                        </p>
-                        <p class="ficha-tec-coreo">
-                            <span>Foto:</span> Daniel Silva <br>
-                            <span>Coreografia:</span>   Vasily Vainonem<br>
-                            <span>Ensaiadores:</span> Luzemberg Santana e Denilce Regina<br>
-                            <span>Música:</span> Bores Asafiev<br>
-                            <span>Bailarinos:</span>  
-                            <a href="https://www.instagram.com/art.malupires/">Maria Luiza Pirez</a> e
-                            <a href="https://www.instagram.com/gabrielmoraisss_/">Gabriel Morais</a><br>
-        
-                        </p>
-                    </details> <!--- ---------------PDD MARIA LUIZA E GABRIEL MORAIS ----------------------->
-        
-                </div> <!-- FIM DETALHES -->
-        
-        </section>
-        
-        <!--- -------------------- SEGUNDO ATO ----------------------------->
-        
-        
-            <section class="terceira-pagina slider-right">  <!-- ----------------- ORDEM DO SEGUNDO ATO  // SEGUNDA SESSÃO ----------->
-        
-                    <h4>2° Ato</h4>
-                    <div class="detalhes">
-        
-                        <details>
-                            <summary>
-                                Cordel 
-                                <i class="fas fa-chevron-right"></i>
-                            </summary>
-                            <img src="https://i.pinimg.com/originals/bd/34/61/bd3461cd7ec2f3abd979a616207a0d70.jpg" alt="">
-                            <p class="release">
-                                O Movimento Armorial surge com o objetivo de resgatar as 
-                                raízes de manifestações populares através de uma cultura 
-                                erudita. O objetivo central era criar uma arte brasileira 
-                                singular baseada nas raízes populares, sendo assim uma 
-                                vertente artístico-cultural de valorização das artes 
-                                populares nordestinas. A trilha sonora do espetáculo é 
-                                composta por música armorial, que provoca para a coreografia 
-                                uma linha de movimentos típicos de manifestações culturais do 
-                                nordeste, que são retratadas na literatura de Cordel.
-                            </p>
-                            <p class="ficha-tec-coreo">
-                                <span>Foto:</span> Alicia Cohim <br>
-                                <span>Coreografia:</span> Evana Arruda<br>
-                                <span>Música:</span> Antônio Madureira e Rucker Bezerra<br>
-                                <span>Elenco:</span> Ana Maria, Aline Ferreira, Gabriel Morais 
-                                Lyedson Fidelis, Maria Luiza Pires, Maxwell Araujo<br>
-        
-                            </p>
-                        </details> <!------------------- CORDEL -------------------->
+              <p>
+                Brasileira Natural de Recífe - PE. Iniciou seus estudos de dança
+                em 1980 no Ballet Studio José Enoch. Graduada em Administração
+                pela UFPB, optou por fazer da dança, sua maior vocação, a sua
+                vida profissional. Seus principais trabalhos na referida. Saiba
+                mais..
+              </p>
+            </div>
+            <!-- FIM IMG TEXT-->
+          </a>
+          <h4>Evana Arruda</h4>
+        </div>
+        <!-- EVANA ARRUDA -->
 
-                        <details>
-                            <summary>
-                            Sacrifícios
-                                <i class="fas fa-chevron-right"></i>
-                            </summary>
-                            <img src="https://i.pinimg.com/originals/01/13/b7/0113b75a6f0fa4c90dba6781d1aed80c.jpg" alt="">
-                            <p class="release">
-                                "Sacrifícios" é um solo de dança que adentra as 
-                                profundezas da alma humana, explorando os conflitos 
-                                internos e as emoções cruas que nos impulsionam. Cada 
-                                movimento é uma expressão de entrega e renúncia, revelando 
-                                a luta entre a paixão e a dor. O solo de dança 
-                                "Sacrifícios" desafia o espectador a testemunhar a 
-                                jornada do artista enquanto ele se entrega ao ritmo 
-                                da música e aos anseios do coração, criando uma experiência visceral e inesquecível.
-                            </p>
-                            <p class="ficha-tec-coreo">
-                                <span>Coreografia:</span> Gilberto Melo, Rhuan Ramires<br>
-                                <span>Música:</span> Alaskan Tapes<br>
-                                <span>Bailarino:</span> 
-                                <a href="https://www.instagram.com/rhuanramires_/">Rhuan Ramires</a>
-                            </p>
-                        </details>  <!------------------ SOLO RHUAM - -->
-        
-                        <details>
-                            <summary>
-                                Em nome do Amor
-                                <i class="fas fa-chevron-right"></i>
-                            </summary>
-        
-                            <img src="/img/palco/duo.jpeg" alt="">
-        
-                            <p class="release">
-                                Promete ser uma experiência emocionante e comovente 
-                                para todos os amantes da dança e da arte, transportando-os 
-                                para um mundo onde as emoções fluem livremente e as 
-                                vozes silenciosas encontram expressão através do movimento.
-                            </p>
-                            <p class="ficha-tec-coreo">
-                                <span>Foto:</span> Alicia Cohim <br>
-                                <span>Coreografia:</span> Evana Arruda <br>
-                                <span>Música:</span> Gloria Gadelha<br>
-                                <span>Bailarinos:</span> 
-                                <a href="https://www.instagram.com/alineferreiradsantos/"> Aline Ferreira</a> e
-                                <a href="https://www.instagram.com/maxwellaraujo11/"> Maxwell Araujo</a><br>
-                        </details> <!-- --------------------- DUO MAXWWELL E ALINE ----------------------------------->
+        <div class="box-coordenadores">
+          <a href="./elencohtml/denilce.html">
+            <div class="img-text">
+              <img
+                src="https://images.pexels.com/photos/23285900/pexels-photo-23285900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
 
-                        <details>
-                            <summary>
-                                Porque temos que explicar o inexplicável
-                                <i class="fas fa-chevron-right"></i>
-                            </summary>
-                            <img src="/img/palco/ly.JPG" alt="">
-                            <p class="release">
-                                Em um universo de mistérios, somos navegantes, sempre
-                                buscamos entendimento, mas às vezes, é na ausência de resposta que reside a beleza.
-                                Nos perdemos nas teias da razão mas é na poesia do desconhecido que encontramos sentido.
-                                É na aceitação do mistério que nossa verdade é escrita.
-                            </p>
-                            <p class="ficha-tec-coreo">
-                                <span>Coreografia:</span> Evana Arruda<br>
-                                <span>Música:</span> Sinjin Hawke & Zora Jones God<br>
-                                <span>Bailarino:</span> Lyedson Fidelis<br>
-        
-                            </p>
-                        </details> <!--------------------- SOLO LYEDSON ------------------------>      
-        
-                        <details>
-                            <summary>
-                                Tempor Amor
-                                <i class="fas fa-chevron-right"></i>
-                            </summary>
-                            <img src="https://i.pinimg.com/originals/90/80/79/90807963f8f34d402ad61ea29b01d824.jpg" alt="">
-                            <p class="release">
-                                Coreografia premiada no Festival de Joinville e remontada 
-                                pelo coreógrafo Lucas Mendes com a Cia Municipal.
-                            </p>
-                            <p class="ficha-tec-coreo">
-                                <span>Coreografia:</span> Lucas Mendes<br>
-                                <span>Música:</span> Jannifer Hudson<br>
-                                <span>Elenco:</span> Aline Ferreira, Ana Maria Barroso, Debora Duany, Eduardo Lima, Gabriel Morais 
-                                Joalisson Candido, Lyedson Fidelis, Maria Luiza Pires, Maxwell Araujo, Rhuan Ramires, Tâmara Marinara.<br>
-        
-                            </p>
-                        </details> <!------------------- TEMPORAMOR -------------------->
-        
-                    </div> <!-- FIM DETALHES -->
-            </section>
- 
-    
-     
+              <p>
+                Denilce Regina, natural de João Pessoa -PB bacharel em Educação
+                Física, graduada em Licenciatura em Dança e pós graduada em
+                Psicomotricidade. Graduanda em Licenciatura em Educação Física e
+                na pós de Autismo e ABA. Tem formação em Pilates Clássico e
+                Científico. Saiba mais...
+              </p>
+            </div>
+            <!-- FIM IMG TEXT-->
+          </a>
+          <h4>Denilce Regina</h4>
+        </div>
+        <!-- DENILCE REGINA -->
+      </div>
+      <!-- FIM COORDENAÇÃO -->
+    </section>
+    <!-------------- FIM GALERIA ELENCO-------------------------------->
 
- 
+    <!-- COMEÇANDO ELENCO BAILARINOS -->
 
-<div class="sequencia"  id="galeria"> <!-- ----------------- ANUNCIO DO ELENCO DE CORRDENADORES ----------->
-    <h5> Coordenação da cia</h5>
-    <p>Clique nas fotos para Conhecer mais</p>
-</div>
+    <div class="sequencia">
+      <!-- ----------------- ANUNCIO DO ELENCO DE BAILARINOS ----------->
+      <h5>Elenco da cia</h5>
+      <p>Clique nas fotos para conhecer mais</p>
+    </div>
 
-<div class="indicador-scroll">
-    <h4>Role para o lado 
+    <div class="indicador-scroll">
+      <h4>
+        Role para o lado
         <i class="fas fa-chevron-right"></i>
-    </h4>
-</div>
+      </h4>
+    </div>
 
+    <section class="galeria-elenco">
+      <!--------------- ELENCO DOS BAILARINOS ----------------------->
 
-<section class="galeria-elenco">  <!--------------- COORDENAÇÃO CIA ----------------------->
-    <div class="coordenacao">
+      <div class="coordenacao">
         <div class="box-coordenadores">
-            <a href="./elencohtml/stella.html">
+          <a href="./elencohtml/aline.html">
             <div class="img-text">
-                <img src="https://images.pexels.com/photos/23285860/pexels-photo-23285860.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                <p> Brasileira, natural de João Pessoa, Brasil. Seu percurso é marcado 
-                    por uma paixão contínua pela arte da dança e um compromisso 
-                    inabalável com sua disseminação e ensino. Desde os primeiros 
-                    passos em 1975 com José Enoch.  Saiba mais..
-                </p>
-            </div> <!-- FIM IMG TEXT-->
-            </a>
-            <h4>Stella Paula</h4>
-        </div> <!-- STELLA PAULA -->
-
-        <div class="box-coordenadores">
-            <a href="./elencohtml/evana.html">
-            <div class="img-text">
-                <img src="https://images.pexels.com/photos/23285895/pexels-photo-23285895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                
-                <p> 
-                    Brasileira Natural de Recífe - PE. Iniciou seus estudos de dança 
-                    em 1980 no Ballet Studio José Enoch. Graduada em Administração pela 
-                    UFPB, optou por fazer da dança, sua maior vocação, a sua vida profissional.
-                    Seus principais trabalhos na referida. Saiba mais..
-                </p>
-            </div> <!-- FIM IMG TEXT-->
-            </a>
-            <h4>Evana Arruda</h4>
-        </div> <!-- EVANA ARRUDA -->
+              <img
+                src="https://images.pexels.com/photos/23285889/pexels-photo-23285889.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+              <p>
+                Começou os estudos em Ballet clássico e dança contemporânea no
+                Ballet da UEPB em Campina Grande- PB, sob direção de Fredson
+                Souza e Jeferson Freitas, em seguida fez parte da Cia do Teatro
+                Municipal de Campina Grande, dançou e foi assistente do Exchange
+                Program. Saiba mais..
+              </p>
+            </div>
+            <!-- FIM IMG TEXT-->
+          </a>
+          <h4>Aline Ferreira</h4>
+        </div>
+        <!-- ALINE FERREIRA -->
 
         <div class="box-coordenadores">
-            <a href="./elencohtml/denilce.html">
+          <a href="./elencohtml/aninha.html">
             <div class="img-text">
-                <img src="https://images.pexels.com/photos/23285900/pexels-photo-23285900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                
-                <p> 
-                    Denilce Regina, natural de João Pessoa -PB bacharel em Educação Física, 
-                    graduada em Licenciatura em Dança e pós graduada em Psicomotricidade. 
-                    Graduanda em Licenciatura em Educação Física e na pós de Autismo e ABA. 
-                    Tem formação em Pilates Clássico e Científico. Saiba mais...
-                </p>
-            </div> <!-- FIM IMG TEXT-->
-            </a>
-            <h4>Denilce Regina</h4>
-        </div> <!-- DENILCE REGINA -->
+              <img
+                src="https://images.pexels.com/photos/23285893/pexels-photo-23285893.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt=""
+              />
 
-        
-    </div> <!-- FIM COORDENAÇÃO -->
-</section>     <!-------------- FIM GALERIA ELENCO-------------------------------->
-
-<!-- COMEÇANDO ELENCO BAILARINOS -->
-
-<div class="sequencia">  <!-- ----------------- ANUNCIO DO ELENCO DE BAILARINOS ----------->
-    <h5> Elenco da cia</h5>
-    <p>Clique nas fotos para conhecer mais</p>
-</div>
-
-
-<div class="indicador-scroll">
-    <h4>Role para o lado 
-        <i class="fas fa-chevron-right"></i>
-    </h4>
-</div>
-
-
-<section class="galeria-elenco">   <!--------------- ELENCO DOS BAILARINOS ----------------------->
-
-    <div class="coordenacao">
-        <div class="box-coordenadores">
-            <a href="./elencohtml/aline.html">
-            <div class="img-text">
-                <img src="https://images.pexels.com/photos/23285889/pexels-photo-23285889.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                <p> Começou os estudos em Ballet clássico e dança 
-                    contemporânea no Ballet da UEPB em Campina Grande- 
-                    PB, sob direção de Fredson Souza e Jeferson Freitas, 
-                    em seguida fez parte da Cia do Teatro Municipal 
-                    de Campina Grande, dançou e foi assistente do Exchange Program. 
-                      Saiba mais..
-                </p>
-            </div> <!-- FIM IMG TEXT-->
-            </a>
-            <h4>Aline Ferreira</h4>
-        </div> <!-- ALINE FERREIRA -->
+              <p>
+                Natural de João Pessoa - PB, foi top 10 no World Ballet
+                Competition nos Estados Unidos e já se apresentou em diversos
+                países, incluindo Alemanha, Portugal, EUA e Itália. Recebeu
+                bolsas de estudo para o PALLCO Conservatory (Portugal), Houston
+                Ballet Academy (EUA), Saiba Mais...
+              </p>
+            </div>
+            <!-- FIM IMG TEXT-->
+          </a>
+          <h4>Ana Maria Barroso</h4>
+        </div>
+        <!-- ANA MARIA -->
 
         <div class="box-coordenadores">
-            <a href="./elencohtml/aninha.html">
+          <a href="./elencohtml/debora.html">
             <div class="img-text">
-                <img src="https://images.pexels.com/photos/23285893/pexels-photo-23285893.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
-                
-                <p> 
-                    Natural de João Pessoa - PB, foi top 10 no World Ballet 
-                    Competition nos Estados Unidos e já se apresentou 
-                    em diversos países, incluindo Alemanha, Portugal, 
-                    EUA e Itália. Recebeu bolsas de estudo para o PALLCO 
-                    Conservatory (Portugal), Houston Ballet Academy (EUA), Saiba Mais...
-                </p>
-            </div> <!-- FIM IMG TEXT-->
-            </a>
-            <h4>Ana Maria Barroso</h4>
-        </div> <!-- ANA MARIA -->
+              <img
+                src="https://images.pexels.com/photos/23285886/pexels-photo-23285886.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+              <p>
+                Brasileira, nascida em João Pessoa - PB, é graduanda em Dança na
+                Universidade Federal da Paraíba, iniciou sua jornada na dança
+                aos 7 anos de idade. Durante sua formação, estudou na renomada
+                Escola do Teatro Bolshoi no Brasil, localizada em Joinville,
+                Santa Catarina. Saiba mais..
+              </p>
+            </div>
+            <!-- FIM IMG TEXT-->
+          </a>
+          <h4>Debora Duany</h4>
+        </div>
+        <!-- DEBORA DUANY -->
 
         <div class="box-coordenadores">
-            <a href="./elencohtml/debora.html">
+          <a href="./elencohtml/eduardo.html">
             <div class="img-text">
-                <img src="https://images.pexels.com/photos/23285886/pexels-photo-23285886.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                <p>  Brasileira, nascida em João Pessoa - PB, 
-                    é graduanda em Dança na Universidade Federal 
-                    da Paraíba, iniciou sua jornada na dança aos 7 
-                    anos de idade. Durante sua formação, estudou na 
-                    renomada Escola do Teatro Bolshoi no Brasil, localizada 
-                    em Joinville, Santa Catarina.  Saiba mais..
-                </p>
-            </div> <!-- FIM IMG TEXT-->
-            </a>
-            <h4>Debora Duany</h4>
-        </div> <!-- DEBORA DUANY -->
+              <img
+                src="https://images.pexels.com/photos/23285846/pexels-photo-23285846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+
+              <p>
+                Brasileiro, natural de João Pessoa - PB, iniciou sua trajetória
+                na dança na Casa Pequeno Davi, onde desde pequeno dançava jazz.
+                Aos 13 anos, ingressou na Escola do Teatro Bolshoi no Brasil,
+                formando-se em 2020. Atualmente, é bailarino na Companhia
+                Municipal de Dança de João Pessoa.
+              </p>
+            </div>
+            <!-- FIM IMG TEXT-->
+          </a>
+          <h4>Eduardo Lima</h4>
+        </div>
+        <!-- Eduardo LIMA -->
 
         <div class="box-coordenadores">
-            <a href="./elencohtml/eduardo.html">
+          <a href="./elencohtml/gabriel.html">
             <div class="img-text">
-                <img src="https://images.pexels.com/photos/23285846/pexels-photo-23285846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                
-                <p>
-                    Brasileiro, natural de João Pessoa - PB, 
-                    iniciou sua trajetória na dança na Casa Pequeno Davi, 
-                    onde desde pequeno dançava jazz. Aos 13 anos, ingressou 
-                    na Escola do Teatro Bolshoi no Brasil, formando-se em 2020. 
-                    Atualmente, é bailarino na Companhia Municipal de Dança de João Pessoa.
-                </p>
-            </div> <!-- FIM IMG TEXT-->
-            </a>
-            <h4>Eduardo Lima</h4>
-        </div> <!-- Eduardo LIMA -->
-    
-        <div class="box-coordenadores">
-            <a href="./elencohtml/gabriel.html">
-            <div class="img-text">
-                <img src="https://images.pexels.com/photos/23285862/pexels-photo-23285862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                
-                <p> Brasileiro, natural de João Pessoa - 
-                    PB, é graduado pela Escola do Teatro 
-                    Bolshoi no Brasil. Durante os dois anos 
-                    em que esteve ativamente envolvido na escola, 
-                    foi orientado por mestres renomados, como Vladimir 
-                    Vasiliev e Galina Kravchenko. Saiba mais..
-                </p>
-            </div> <!-- FIM IMG TEXT-->
-            </a>
-            <h4>Gabriel Morais</h4>
-        </div> <!-- GABRIEL MORAIS -->
-    
-        <div class="box-coordenadores">
-            <a href="./elencohtml/jasmim.html">
-            <div class="img-text">
-                <img src="https://images.pexels.com/photos/23285885/pexels-photo-23285885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                
-                <p> 
-                    Natural de Teresina, Piauí, iniciou sua 
-                    jornada na dança aos 7 anos de idade e 
-                    imediatamente desenvolveu uma paixão pela 
-                    arte. Recebeu formação principal em ballet 
-                    clássico sob a instrução do renomado professor Helly 
-                    Batista, na Escola de Ballet Helly Batista. Saiba mais..
-                </p>
-            </div> <!-- FIM IMG TEXT-->
-            </a>
-            <h4>Jasmim Machado</h4>
-        </div> <!-- JASMIM MACHADO -->
+              <img
+                src="https://images.pexels.com/photos/23285862/pexels-photo-23285862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+
+              <p>
+                Brasileiro, natural de João Pessoa - PB, é graduado pela Escola
+                do Teatro Bolshoi no Brasil. Durante os dois anos em que esteve
+                ativamente envolvido na escola, foi orientado por mestres
+                renomados, como Vladimir Vasiliev e Galina Kravchenko. Saiba
+                mais..
+              </p>
+            </div>
+            <!-- FIM IMG TEXT-->
+          </a>
+          <h4>Gabriel Morais</h4>
+        </div>
+        <!-- GABRIEL MORAIS -->
 
         <div class="box-coordenadores">
-            <a href="./elencohtml/jhon.html">
+          <a href="./elencohtml/jasmim.html">
             <div class="img-text">
-                <img src="https://images.pexels.com/photos/23285884/pexels-photo-23285884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                
-                <p> 
-                    Brasileiro, natural de João Pessoa - PB, 
-                    tem formação em balé clássico e dança contemporânea, 
-                    e está atuando como bailarino e assistente na companhia 
-                    desde setembro de 2021.
-                </p>
-            </div> <!-- FIM IMG TEXT-->
-            </a>
-            <h4>joalisson Candido</h4>
-        </div> <!-- JOALISSON CANDIDO -->
+              <img
+                src="https://images.pexels.com/photos/23285885/pexels-photo-23285885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+
+              <p>
+                Natural de Teresina, Piauí, iniciou sua jornada na dança aos 7
+                anos de idade e imediatamente desenvolveu uma paixão pela arte.
+                Recebeu formação principal em ballet clássico sob a instrução do
+                renomado professor Helly Batista, na Escola de Ballet Helly
+                Batista. Saiba mais..
+              </p>
+            </div>
+            <!-- FIM IMG TEXT-->
+          </a>
+          <h4>Jasmim Machado</h4>
+        </div>
+        <!-- JASMIM MACHADO -->
 
         <div class="box-coordenadores">
-            <a href="./elencohtml/lyedson.html">
+          <a href="./elencohtml/jhon.html">
             <div class="img-text">
-                <img src="https://images.pexels.com/photos/23285865/pexels-photo-23285865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                
-                <p>  Brasileiro, natural de Santa Rita, começou a dançar 
-                    aos 10 anos de idade e ingressou no Ballet Jovem da 
-                    Paraíba aos 14 anos. Participou de diversos cursos e 
-                    concursos renomados, incluindo Café com Dança 2019, 
-                    Tanz Festival de Dança 2019, Saiba mais..
-                </p>
-            </div> <!-- FIM IMG TEXT-->
-            </a>
-            <h4>Lyedson Fidelis</h4>
-        </div> <!-- LYEDSON FIDELIS -->
+              <img
+                src="https://images.pexels.com/photos/23285884/pexels-photo-23285884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+
+              <p>
+                Brasileiro, natural de João Pessoa - PB, tem formação em balé
+                clássico e dança contemporânea, e está atuando como bailarino e
+                assistente na companhia desde setembro de 2021.
+              </p>
+            </div>
+            <!-- FIM IMG TEXT-->
+          </a>
+          <h4>joalisson Candido</h4>
+        </div>
+        <!-- JOALISSON CANDIDO -->
 
         <div class="box-coordenadores">
-            <a href="./elencohtml/malu.html">
+          <a href="./elencohtml/lyedson.html">
             <div class="img-text">
-                <img src="https://images.pexels.com/photos/23285899/pexels-photo-23285899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                
-                <p>  Natural de João Pessoa - PB, bailarina, professora 
-                    e coreógrafa. Iniciou seus estudos em dança em 2006 
-                    com a professora Denilce Regina. Formou-se pela Escola 
-                    de Dança do Teatro Bolshoi no Brasil em 2016 e é graduada 
-                    em Educação Física. Saiba mais..
-                </p>
-            </div> <!-- FIM IMG TEXT-->
-            </a>
-            <h4>Maria Luiza Pires</h4>
-        </div> <!-- MARIA LUIZA -->
-    
-        <div class="box-coordenadores">
-            <a href="./elencohtml/max.html">
-            <div class="img-text">
-                <img src="https://images.pexels.com/photos/23285867/pexels-photo-23285867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                
-                <p> Começou os estudos em Ballet clássico e dança 
-                    contemporânea no Ballet da UEPB em Campina Grande- 
-                    PB, sob direção de Fredson Souza e Jeferson Freitas, 
-                    em seguida fez parte da Cia do Teatro Municipal 
-                    de Campina Grande, dançou e foi assistente do Exchange Program. 
-                      Saiba mais...
-                </p>
-            </div> <!-- FIM IMG TEXT-->
-            </a>
-            <h4>Maxwell Araujo</h4>
-        </div> <!-- Maxwell ARAUJO -->
+              <img
+                src="https://images.pexels.com/photos/23285865/pexels-photo-23285865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
 
-        
-        <div class="box-coordenadores">
-            <a href="./elencohtml/rhuan.html">
-            <div class="img-text">
-                <img src="https://images.pexels.com/photos/23285869/pexels-photo-23285869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                
-                <p> 
-                    Brasileiro, natural de Cabedelo - PB.  Iniciou sua jornada na dança aos 14 anos. 
-                    Durante sua formação, estudou em três escolas; Rita 
-                    Spinelli, Escola de Dança de Cabedelo e Jazz&Cia. Saiba mais..
-                </p>
-            </div> <!-- FIM IMG TEXT-->
-            </a>
-            <h4>Rhuan Ramires</h4>
-        </div> <!-- RHUAM RAMIRES -->
+              <p>
+                Brasileiro, natural de Santa Rita, começou a dançar aos 10 anos
+                de idade e ingressou no Ballet Jovem da Paraíba aos 14 anos.
+                Participou de diversos cursos e concursos renomados, incluindo
+                Café com Dança 2019, Tanz Festival de Dança 2019, Saiba mais..
+              </p>
+            </div>
+            <!-- FIM IMG TEXT-->
+          </a>
+          <h4>Lyedson Fidelis</h4>
+        </div>
+        <!-- LYEDSON FIDELIS -->
 
         <div class="box-coordenadores">
-            <a href="./elencohtml/tamara.html">
+          <a href="./elencohtml/malu.html">
             <div class="img-text">
-                <img src="https://images.pexels.com/photos/23285891/pexels-photo-23285891.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                
-                <p> 
-                    Natural da cidade de Bayeux, iniciou na dança aos 6 
-                    anos de idade na escola de dança do teatro Santa Roza, 
-                    dando início a sua carreira profissional aos 12 anos no 
-                    Ballet Jovem da Paraíba. Saiba mais..
-                </p>
-            </div> <!-- FIM IMG TEXT-->
-            </a>
-            <h4>Tâmara Marinara</h4>
-        </div> <!-- TAMARA MARINARA -->
-    
-    </div> <!-- ------------------------- FIM COORDENACAO --------------------->
-    
+              <img
+                src="https://images.pexels.com/photos/23285899/pexels-photo-23285899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
 
-</section>
+              <p>
+                Natural de João Pessoa - PB, bailarina, professora e coreógrafa.
+                Iniciou seus estudos em dança em 2006 com a professora Denilce
+                Regina. Formou-se pela Escola de Dança do Teatro Bolshoi no
+                Brasil em 2016 e é graduada em Educação Física. Saiba mais..
+              </p>
+            </div>
+            <!-- FIM IMG TEXT-->
+          </a>
+          <h4>Maria Luiza Pires</h4>
+        </div>
+        <!-- MARIA LUIZA -->
 
-<footer>   <!--------------- RODAPÉ ----------------------->
-    <div class="logos">
+        <div class="box-coordenadores">
+          <a href="./elencohtml/max.html">
+            <div class="img-text">
+              <img
+                src="https://images.pexels.com/photos/23285867/pexels-photo-23285867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+
+              <p>
+                Começou os estudos em Ballet clássico e dança contemporânea no
+                Ballet da UEPB em Campina Grande- PB, sob direção de Fredson
+                Souza e Jeferson Freitas, em seguida fez parte da Cia do Teatro
+                Municipal de Campina Grande, dançou e foi assistente do Exchange
+                Program. Saiba mais...
+              </p>
+            </div>
+            <!-- FIM IMG TEXT-->
+          </a>
+          <h4>Maxwell Araujo</h4>
+        </div>
+        <!-- Maxwell ARAUJO -->
+
+        <div class="box-coordenadores">
+          <a href="./elencohtml/rhuan.html">
+            <div class="img-text">
+              <img
+                src="https://images.pexels.com/photos/23285869/pexels-photo-23285869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+
+              <p>
+                Brasileiro, natural de Cabedelo - PB. Iniciou sua jornada na
+                dança aos 14 anos. Durante sua formação, estudou em três
+                escolas; Rita Spinelli, Escola de Dança de Cabedelo e Jazz&Cia.
+                Saiba mais..
+              </p>
+            </div>
+            <!-- FIM IMG TEXT-->
+          </a>
+          <h4>Rhuan Ramires</h4>
+        </div>
+        <!-- RHUAM RAMIRES -->
+
+        <div class="box-coordenadores">
+          <a href="./elencohtml/tamara.html">
+            <div class="img-text">
+              <img
+                src="https://images.pexels.com/photos/23285891/pexels-photo-23285891.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+
+              <p>
+                Natural da cidade de Bayeux, iniciou na dança aos 6 anos de
+                idade na escola de dança do teatro Santa Roza, dando início a
+                sua carreira profissional aos 12 anos no Ballet Jovem da
+                Paraíba. Saiba mais..
+              </p>
+            </div>
+            <!-- FIM IMG TEXT-->
+          </a>
+          <h4>Tâmara Marinara</h4>
+        </div>
+        <!-- TAMARA MARINARA -->
+      </div>
+      <!-- ------------------------- FIM COORDENACAO --------------------->
+    </section>
+
+    <section class="segunda-pagina slider-left">
+      <!-- ----------------- AREA DA FICHA TECNICA ----------->
+      <h3>Ficha Técnica</h3>
+      <p>
+        <span>Diretor Geral da Funjope:</span> Marcus Alves <br />
+        <span>Diretor adjunto:</span> Antônio Alcantara <br />
+        <span>Coordenação de dança:</span> Geovan Conceição <br />
+        <span>Assistente da divisão de dança:</span> Jack Keysy <br />
+        <span>Direção da Cia:</span> Stella Paula <br />
+        <span>Professores:</span> Denilce Regina, Evana Arruda<br />
+        <span>Coreógrafos:</span> Evana Arruda<br />
+        <span>Ensaiadores:</span> Denilce Regina e Evana Arruda<br />
+        <span>Elenco:</span> Aline Ferreira, Ana Maria Barroso, Débora Duany,
+        <br />
+        Eduardo Lima, Gabriel Morais, Jasmim Machado, Joalisson Candido, <br />
+        Lyedson Fidelis, Maria Luiza Pires, Maxwell Araújo, Rhuan Ramires,
+        <br />
+        Tâmara Marinara. <br />
+        <span>Desenvolvedor:</span> Maxwell Araujo<br />
+        <span>Fotos do elenco:</span> André Pimentel<br />
+      </p>
+    </section>
+    <!-- FIM SEGUNDA PAGINA-->
+
+    <footer>
+      <!--------------- RODAPÉ ----------------------->
+      <div class="logos">
         <div class="logocia">
-            <img src="./img/logo rodape.png" alt="">
+          <img src="./img/logo rodape.png" alt="" />
         </div>
 
         <div class="midias">
-            <a href="https://www.youtube.com/@Ciamunicipal"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.instagram.com/ciamunicipal/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@Ciamunicipal"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a href="https://www.instagram.com/ciamunicipal/"
+            ><i class="fab fa-instagram"></i
+          ></a>
         </div>
 
-        
         <div class="realizadores">
-            <img src="./img/FUNJOPE__1_-removebg-preview.png" alt="">
-            <img src="./img/logopref.svg" alt="">
+          <img src="./img/FUNJOPE__1_-removebg-preview.png" alt="" />
+          <img src="./img/logopref.svg" alt="" />
         </div>
-    </div> <!--- FIM LOGOS-->
+      </div>
+      <!--- FIM LOGOS-->
 
-    <hr>
+      <hr />
 
-    <p>
-        © Direitos autorais 2024. Desenvolvido por <a href="https://maxwell-araujo-dev.vercel.app/">Maxwell Araujo</a>
-    </p>
+      <p>
+        © Direitos autorais 2024. Desenvolvido por
+        <a href="https://maxwell-araujo-dev.vercel.app/">Maxwell Araujo</a>
+      </p>
+    </footer>
 
-</footer>
+    <script src="script.js"></script>
+    <!--------------- JAVA SCRIPT PARA ANIMAÇÃO CIA ----------------------->
+    <!-- SCRIPT DO BOOTSTRAP-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="script.js"></script>   <!--------------- JAVA SCRIPT PARA ANIMAÇÃO CIA ----------------------->
-</body>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
+    ></script>
+
+    <script>
+      // Seleciona todos os links do menu e o botão do hambúrguer
+      const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+      const navbarToggler = document.querySelector(".navbar-toggler");
+      const navbarCollapse = document.querySelector(".navbar-collapse");
+
+      // Fecha o menu ao clicar em qualquer link
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          if (navbarCollapse.classList.contains("show")) {
+            navbarToggler.click(); // Simula o clique no botão hambúrguer para fechar o menu
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
