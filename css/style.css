@@ -105,14 +105,6 @@ body {
 
 /* ----------------------------------------- AREA VOLTADA PARA FICHA TECNICA  -------------------------------------*/
 
-.mobile-bg {
-  background-image: url("/img/primeiro_plano.JPG");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh; /* Garante que a div ocupe toda a altura da tela */
-}
-
 .segunda-pagina {
   height: 80vh;
   display: flex;
