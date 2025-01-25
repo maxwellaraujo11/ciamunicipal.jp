@@ -549,7 +549,7 @@ footer p a:hover {
   }
 
   .mobile-bg {
-    background-image: url("/img/mobile.jpg");
+    background-image: url("/img/mobile.jpg") !important;
   }
 
   .cards {
@@ -748,7 +748,7 @@ footer p a:hover {
   }
 
   .mobile-bg {
-    background-image: url("/img/mobile.jpg");
+    background-image: url("/img/mobile.jpg") !important;
   }
 
   .cards {
