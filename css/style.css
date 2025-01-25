@@ -410,15 +410,87 @@ footer p a:hover {
 /* ------------------------------------------------ AJUSTES PARA O RESPONSIVO */
 
 @media (min-width: 600px) and (max-width: 800px) {
-  nav {
+  /* Ajusta o menu colapsado */
+  .navbar-collapse.show {
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 60px;
-    padding-top: 20px;
+    height: 100vh; /* Ocupa a altura total da tela */
+    z-index: 1000; /* Coloca o menu abaixo do botão */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; /* Links em coluna */
+    align-items: center; /* Centraliza os links */
+    justify-content: center; /* Centraliza verticalmente */
   }
 
-  nav ul li a {
-    font-size: 1.3rem;
-    width: 130px;
+  .navbar-toggler {
+    position: relative;
+    z-index: 1100; /* Maior que o menu */
+  }
+
+  /* Alinhar os links centralizados */
+  .navbar-nav {
+    display: flex;
+    flex-direction: column; /* Coluna no mobile */
+    align-items: center; /* Centraliza horizontalmente */
+  }
+
+  .navbar-nav .nav-link {
+    margin: 0.5rem 0; /* Espaçamento entre os links */
+    color: white; /* Cor dos links */
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #ffcc00; /* Cor de destaque no hover */
+  }
+
+  .navbar-nav .nav-link.active {
+    color: white !important; /* Garante que o link ativo também tenha a cor branca */
+  }
+
+  /* Corrigir o z-index do menu */
+  .navbar-collapse {
+    position: relative;
+    z-index: 1050;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Adicionar um background para o menu dropdown */
+  .navbar-collapse {
+    background-color: white; /* ou outra cor de sua preferência */
+  }
+
+  /* Garantir alinhamento correto do menu */
+  .nav-link {
+    text-align: center;
+  }
+
+  .imgelenco {
+    background-image: url("/img/mobile.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .cards {
+    display: block !important;
+    flex-direction: column !important;
+    margin: 0 auto;
+  }
+
+  .cards-item {
+    margin: 0 auto;
+  }
+
+  .width-img {
+    width: 100% !important;
   }
 
   footer {
@@ -427,19 +499,87 @@ footer p a:hover {
 }
 
 @media (max-width: 600px) {
-  nav {
+  /* Ajusta o menu colapsado */
+  .navbar-collapse.show {
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 60px;
-    padding-top: 20px;
+    height: 100vh; /* Ocupa a altura total da tela */
+    z-index: 1000; /* Coloca o menu abaixo do botão */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; /* Links em coluna */
+    align-items: center; /* Centraliza os links */
+    justify-content: center; /* Centraliza verticalmente */
   }
 
-  nav ul li a {
-    font-size: 1rem;
+  .navbar-toggler {
+    position: relative;
+    z-index: 1100; /* Maior que o menu */
   }
 
-  .primeira-pagina {
+  /* Alinhar os links centralizados */
+  .navbar-nav {
+    display: flex;
+    flex-direction: column; /* Coluna no mobile */
+    align-items: center; /* Centraliza horizontalmente */
+  }
+
+  .navbar-nav .nav-link {
+    margin: 0.5rem 0; /* Espaçamento entre os links */
+    color: white; /* Cor dos links */
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #ffcc00; /* Cor de destaque no hover */
+  }
+
+  .navbar-nav .nav-link.active {
+    color: white !important; /* Garante que o link ativo também tenha a cor branca */
+  }
+
+  /* Corrigir o z-index do menu */
+  .navbar-collapse {
+    position: relative;
+    z-index: 1050;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Adicionar um background para o menu dropdown */
+  .navbar-collapse {
+    background-color: white; /* ou outra cor de sua preferência */
+  }
+
+  /* Garantir alinhamento correto do menu */
+  .nav-link {
+    text-align: center;
+  }
+
+  .imgelenco {
+    background-image: url("/img/mobile.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     height: 100vh;
-    margin-bottom: 0;
+  }
+
+  .cards {
+    display: block !important;
+    flex-direction: column !important;
+    margin: 0 auto;
+  }
+
+  .cards-item {
+    margin: 0 auto;
+  }
+
+  .width-img {
+    width: 100% !important;
   }
 
   .descktop {
