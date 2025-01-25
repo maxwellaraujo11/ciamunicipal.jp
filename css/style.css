@@ -514,6 +514,15 @@ footer p a:hover {
     text-align: center;
   }
 
+  .mobile-bg {
+    background-attachment: scroll; /* Remover o parallax nos dispositivos móveis */
+    background-size: cover; /* Garantir que a imagem cubra toda a área */
+    background-position: center; /* Manter a imagem centralizada */
+    height: 100vh; /* Garantir que a div ocupe 100% da altura */
+    position: relative;
+    z-index: 1;
+  }
+
   .cards {
     display: block !important;
     flex-direction: column !important;
@@ -707,6 +716,15 @@ footer p a:hover {
   /* Garantir alinhamento correto do menu */
   .nav-link {
     text-align: center;
+  }
+
+  .mobile-bg {
+    background-attachment: scroll; /* Remover o parallax nos dispositivos móveis */
+    background-size: cover; /* Garantir que a imagem cubra toda a área */
+    background-position: center; /* Manter a imagem centralizada */
+    height: 100vh; /* Garantir que a div ocupe 100% da altura */
+    position: relative;
+    z-index: 1;
   }
 
   .cards {
