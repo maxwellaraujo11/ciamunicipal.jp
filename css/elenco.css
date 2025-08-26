@@ -1,16 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .galeria-elenco {
-    height: 100%;
-    width: 80%;
-    margin-bottom: 40px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
+  height: 100%;
+  width: 80%;
+  margin-bottom: 40px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .coordenacao {
@@ -24,7 +24,6 @@
 
 .coordenacao::-webkit-scrollbar {
   height: 15px; /* largura da barra de rolagem */
-  
 }
 
 .coordenacao::-webkit-scrollbar-track {
@@ -43,113 +42,217 @@
   cursor: grab;
 }
 
-
 @keyframes slider {
   from {
-     transform: translateX(0%);
-  } to {
-     transform: translateX(-100%);
+    transform: translateX(0%);
   }
-  
+  to {
+    transform: translateX(-100%);
+  }
 }
 
-
-
 .img-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  height: 350px;
 }
 
 .img-text p {
-    width: 240px;
-    height:320px;
-    text-align: justify;
-    font-size: 1.2rem;
-    transition: all ease-in-out 1s;
-    position: relative;
-    bottom: 310px;
-    left: -317px;
+  width: 240px;
+  height: 320px;
+  text-align: justify;
+  font-size: 1.2rem;
+  transition: all ease-in-out 1s;
+  position: relative;
+  bottom: 310px;
+  left: -317px;
 }
 
 .img-text img {
-    width: 280px;
-    height: 360px;
-    border-radius: 5px;
-    border: 1px solid #fff;
-    transition: all ease-in-out 1s;
+  width: 280px;
+  height: 360px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  transition: all ease-in-out 1s;
 }
 
 .img-text:hover img {
-    opacity: 0.4;
+  opacity: 0.4;
 }
 
 .box-coordenadores {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    transition: all ease-in-out 1s;
-    width: 320px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all ease-in-out 1s;
+  width: 320px;
 }
 
 .box-coordenadores h4 {
-    color: #e7e3e3;
-    font-size: 1.5rem;
-    text-align: center;
+  color: #e7e3e3;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .box-coordenadores:hover p {
-    transform: translateX(320px);
+  transform: translateX(320px);
 }
 
 .coordenacao a {
-    text-decoration: none;
+  text-decoration: none;
+  color: #e7e3e3;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.box-coordenadores:hover h4 {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .coordenacao {
+    margin-bottom: 50px;
+    overflow-x: scroll;
+  }
+
+  .coordenacao::-webkit-scrollbar {
+    height: 13px; /* largura da barra de rolagem */
+  }
+
+  .coordenacao::-webkit-scrollbar-track {
+    background: none; /* cor de fundo do track */
+  }
+
+  .coordenacao::-webkit-scrollbar-thumb {
+    background: #f0eded; /* cor do thumb */
+    border-radius: 8px; /* borda arredondada do thumb */
+    transition: 1s ease-in-out;
+    transform: scale(1.2);
+  }
+
+  .coordenacao::-webkit-scrollbar-thumb:hover {
+    background: #504e4ed5; /* cor do thumb quando hover */
+    cursor: grab;
+  }
+
+  .box-coordenadores .img-text h4 {
     color: #e7e3e3;
-    font-size: 1.5rem;
-    text-align: center;
+  }
 }
 
-.box-coordenadores:hover h4  {
-    text-decoration: underline;
+/* animações dos indacadores de scroll para lado e para baixo dos cards dos repertorios */
+/* --- Setas desktop --- */
+.desktop-hint {
+  position: relative;
+  width: 100%;
+}
+.desktop-hint .arrow-left,
+.desktop-hint .arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+  animation: pulse 1.5s infinite;
+}
+.desktop-hint .arrow-left {
+  left: 10px;
+}
+.desktop-hint .arrow-right {
+  right: 10px;
 }
 
-
-
-@media  (max-width: 600px) {
-    .coordenacao {
-        margin-bottom: 50px;
-        overflow-x: scroll;
-      }
-
-
-    .coordenacao::-webkit-scrollbar {
-        height: 13px; /* largura da barra de rolagem */
-        
-      }
-      
-      .coordenacao::-webkit-scrollbar-track {
-        background: none; /* cor de fundo do track */
-      }
-      
-      .coordenacao::-webkit-scrollbar-thumb {
-        background: #f0eded; /* cor do thumb */
-        border-radius: 8px; /* borda arredondada do thumb */
-        transition: 1s ease-in-out;
-        transform: scale(1.2);
-      }
-      
-      .coordenacao::-webkit-scrollbar-thumb:hover {
-        background: #504e4ed5; /* cor do thumb quando hover */
-        cursor: grab;
-      }
-
-
-    .box-coordenadores .img-text h4 {
-        color: #e7e3e3;
-        
-    }
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.2);
+  }
 }
 
+/* --- Seta mobile --- */
+.mobile-hint .arrow-down {
+  font-size: 2rem;
+  display: block;
+  animation: bounce 1.5s infinite;
+  color: rgba(254, 254, 254, 0.7);
+}
+.mobile-hint p {
+  font-size: 0.9rem;
+  color: #666;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+/* ------ TAMANHOS DOS CARDS DOS REPERTORIOS ------ */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+.card-link:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+.card-body {
+  padding: 0.5rem 0.75rem;
+  padding-left: 0;
+}
+
+.card-body h5 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  line-height: 1.2;
+}
+
+.card-body p {
+  font-size: 0.85rem;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+/* Scroll personalizado só no desktop */
+@media (min-width: 769px) {
+  .coordenacao .cards {
+    overflow-x: auto; /* scroll horizontal */
+    overflow-y: hidden; /* remove vertical */
+    justify-content: flex-start; /* força alinhamento à esquerda */
+  }
+
+  .cards {
+    gap: 1rem; /* ajusta o espaço entre cards */
+  }
+
+  .coordenacao .cards::-webkit-scrollbar {
+    height: 15px; /* altura da barra horizontal */
+  }
+
+  .coordenacao .cards::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  .coordenacao .cards::-webkit-scrollbar-thumb {
+    background: #f0eded;
+    border-radius: 8px;
+    transition: 1s ease-in-out;
+    transform: scale(1.2);
+  }
+
+  .coordenacao .cards::-webkit-scrollbar-thumb:hover {
+    background: #504e4ed5;
+    cursor: grab;
+  }
+}

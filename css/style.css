@@ -455,6 +455,11 @@ footer p a:hover {
 }
 
 @media (max-width: 600px) {
+  /* AJUSTANDO OS BUTÕES DE MARCAÇÃO DO CAROUSEL PARA MOBILE */
+  .carousel-indicators {
+    bottom: -40px; /* mais afastado da imagem */
+  }
+
   /* Ajusta o menu colapsado */
   .navbar-collapse {
     background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */

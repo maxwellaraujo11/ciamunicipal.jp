@@ -35,6 +35,7 @@
     />
 
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/elenco.css" />
     <title>CMD - Vórtice</title>
     <link rel="icon" href=".//img/logo 1.svg" type="image/png" />
 
@@ -124,10 +125,10 @@
             </li>
             <!-- Links internos continuam na mesma página -->
             <li class="nav-item">
-              <a class="nav-link" href="#segunda-sessao">Repertório</a>
+              <a class="nav-link" href="/index.html">Repertório</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#galeria">Sobre nós</a>
+              <a class="nav-link" href="/index.html">Sobre nós</a>
             </li>
           </ul>
         </div>
@@ -159,7 +160,7 @@
 
     <!-- FOTOS -->
     <section class="container my-5 slider-left">
-      <h2 class="section-title">Galeria</h2>
+      <h2 class="section-title text-light">Galeria</h2>
       <div class="row g-4">
         <div class="col-md-4">
           <div class="card shadow-sm">
@@ -222,8 +223,8 @@
     </section>
 
     <!-- VÍDEO (link externo) -->
-    <section class="container my-5 text-center show">
-      <h2 class="section-title">Assista ao Vídeo</h2>
+    <section class="container my-5 text-center">
+      <h2 class="section-title text-light">Assista ao Vídeo</h2>
 
       <a
         href="https://www.youtube.com/watch?v=-n2-1hF0XDM&ab_channel=TamaraMarinara"
@@ -254,6 +255,101 @@
         </div>
       </div>
     </section>
+
+    <!-- CARDS DOS RERPERTORIOS -->
+
+    <h2 class="section-title text-light">Saiba sobre nossos trabalhos</h2>
+    <section>
+      <!-- Dica desktop (setas laterais) -->
+      <div class="desktop-hint d-none d-md-block">
+        <span class="arrow-left">‹</span>
+        <span class="arrow-right">›</span>
+      </div>
+
+      <!-- Dica mobile (seta para baixo) -->
+      <div class="mobile-hint d-md-none text-center mt-3">
+        <span class="arrow-down">↓</span>
+        <p>Role a imagem para baixo</p>
+      </div>
+    </section>
+
+    <section class="galeria-elenco">
+      <!--------------- COORDENAÇÃO CIA ----------------------->
+      <div class="coordenacao">
+        <div
+          class="text-center d-flex d-md-flex justify-content-start gap-4 mt-2 cards"
+        >
+          <!-- PONTO DE EXAUSTÃO -->
+          <a href="exhaustao.html" class="card-link">
+            <div class="card mt-3 cards-item" style="width: 18rem">
+              <img
+                src="/img/repertorios/exaustao/ex4.jpeg"
+                class="card-img-top"
+                alt="Ponto de Exaustão"
+              />
+              <div class="card-body">
+                <h6>Ponto de Exaustão</h6>
+                <p class="card-text fs-6">Coreografia de Marcelo Pereira</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Cordel -->
+          <a href="cordel.html" class="card-link">
+            <div class="card mt-3 cards-item" style="width: 18rem">
+              <img src="/img/cordel.png" class="card-img-top" alt="Cordel" />
+              <div class="card-body">
+                <h5>Cordel</h5>
+                <p class="card-text">
+                  Uma obra que mostra a força do nordeste.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Sivuca -->
+          <a href="sivuca.html" class="card-link">
+            <div class="card mt-3 cards-item" style="width: 18rem">
+              <img src="/img/sivuca.png" class="card-img-top" alt="Sivuca" />
+              <div class="card-body">
+                <h5>Poesia do Som</h5>
+                <p class="card-text">Uma homenagem ao Maestro Sivuca</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Gala -->
+          <a href="gala.html" class="card-link">
+            <div class="card mt-3 cards-item" style="width: 18rem">
+              <img src="/img/gala.png" class="card-img-top" alt="Gala" />
+              <div class="card-body">
+                <h5>Gala Clássica e Contemporânea</h5>
+                <p class="card-text">Do clássico ao contemporâneo</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- VÓRTICE -->
+          <a href="vortice.html" class="card-link">
+            <div class="card mt-3 cards-item" style="width: 18rem">
+              <img
+                src="/img/repertorios/vortice/IMG_6158.JPG"
+                class="card-img-top"
+                alt="Vórtice"
+              />
+              <div class="card-body">
+                <h5>Vórtice</h5>
+                <p class="card-text">Uma homenagem à biodiversidade.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="text-center d-flex d-md-flex d-block justify-content-center gap-4 mt-5 cards mx-5"
+    ></div>
 
     <!-- CONTATO -->
     <footer class="bg-dark text-white text-center py-4">
