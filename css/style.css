@@ -64,45 +64,6 @@ body {
   max-width: 100%;
 }
 
-/* ------------------------------------------ NAVEGAÇÃO CABEÇALHO ------------------------------- */
-
-.dropdown-menu {
-  position: absolute;
-  display: none;
-  background-color: #220b36;
-  transition: ease-in-out 1s;
-  border: #f9f9f9 1px solid;
-  border-top: none;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu a {
-  display: block;
-  font-size: 1.3rem;
-  width: 135px;
-}
-
-/* ---------------------------------------- PRIMEIRA PARTE AREA DE APRESENTAÇÃO DO EVENTO  ------------------------*/
-
-/*.primeira-pagina{
-    width: 100%;
-    animation: sliderBlur 1.5s forwards;
-    filter: blur(15px);
-}
-
-.primeira-pagina img {
-   margin-top: 80px;
-   width: 100%;
-   height: auto;
-}
-
-.primeira-pagina .mobile {
-    display: none;
-} */
-
 /* ----------------------------------------- AREA VOLTADA PARA FICHA TECNICA  -------------------------------------*/
 
 .segunda-pagina {
@@ -138,17 +99,8 @@ body {
 
 /* ------------------------------------- AREA VOLTADA PARA APRESENTÇÃO DA ORDEM */
 
-.terceira-pagina {
-  height: 100%;
-}
-
 #galeria {
   padding-top: 100px;
-}
-
-.terceira-pagina .sequencia h5 {
-  color: #f9f9f9;
-  font-size: 2rem;
 }
 
 .sequencia {
@@ -169,93 +121,7 @@ body {
   font-size: 1rem;
 }
 
-.terceira-pagina h4 {
-  width: 80%;
-  margin: 0 auto;
-  font-size: 1.5rem;
-  color: #f9f9f9;
-  margin-bottom: 20px;
-}
-
 /* --------------------------------------------------- TUDO QUE ENVOLVE A TAG DETAILS E SUMMARY  */
-
-.detalhes {
-  width: 90%;
-  margin: 0 auto;
-}
-
-details {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  padding-inline: 15px;
-  border-radius: 5px;
-  background-color: #481872;
-  width: 90%;
-  border-radius: 5px;
-  border: 1px solid black;
-  display: flex;
-  margin: 0 auto;
-}
-
-details summary {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 1.2rem;
-  color: #f8f8f8;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-details summary::-webkit-details-marker {
-  display: none;
-}
-
-details summary i {
-  font-size: 15px;
-  padding: 5px 0px;
-}
-
-details img {
-  margin-top: 10px;
-  padding-bottom: 5px;
-  border-radius: 10px;
-  width: 50%;
-}
-
-.release {
-  color: #7a7777eb;
-  font-family: "Times New Roman", Times, serif;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-  text-align: justify;
-  width: 90%;
-}
-
-.ficha-tec-coreo {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-  color: #7a7777eb;
-}
-
-.ficha-tec-coreo span {
-  font-size: 1.1rem;
-  color: #f9f9f9;
-}
-
-.ficha-tec-coreo a {
-  color: #cac2c2eb;
-
-  text-decoration: underline;
-}
-
-.ficha-tec-coreo a:hover {
-  transition: 0.5s ease-in-out;
-  color: #f9f9f9;
-  text-decoration: underline;
-  transform: scale(1.2);
-}
 
 .indicador-scroll {
   width: 80%;
@@ -378,43 +244,42 @@ footer p a:hover {
 @media (min-width: 600px) and (max-width: 800px) {
   /* Ajusta o menu colapsado */
   .navbar-collapse.show {
-    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
+    background-color: rgba(0, 0, 0, 0.9);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* Ocupa a altura total da tela */
-    z-index: 1000; /* Coloca o menu abaixo do botão */
+    height: 100vh;
+    z-index: 1000;
     padding: 1rem;
     display: flex;
-    flex-direction: column; /* Links em coluna */
-    align-items: center; /* Centraliza os links */
-    justify-content: center; /* Centraliza verticalmente */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .navbar-toggler {
     position: relative;
-    z-index: 1100; /* Maior que o menu */
+    z-index: 1100;
   }
 
   /* Alinhar os links centralizados */
   .navbar-nav {
     display: flex;
-    flex-direction: column; /* Coluna no mobile */
-    align-items: center; /* Centraliza horizontalmente */
+    flex-direction: column;
+    align-items: center;
   }
 
   .navbar-nav .nav-link {
-    margin: 0.5rem 0; /* Espaçamento entre os links */
-    color: white; /* Cor dos links */
+    margin: 0.5rem 0;
   }
 
   .navbar-nav .nav-link:hover {
-    color: #ffcc00; /* Cor de destaque no hover */
+    color: #ffcc00;
   }
 
   .navbar-nav .nav-link.active {
-    color: white !important; /* Garante que o link ativo também tenha a cor branca */
+    color: white !important;
   }
 
   /* Corrigir o z-index do menu */
@@ -427,10 +292,9 @@ footer p a:hover {
 
   /* Adicionar um background para o menu dropdown */
   .navbar-collapse {
-    background-color: white; /* ou outra cor de sua preferência */
+    background-color: white;
   }
 
-  /* Garantir alinhamento correto do menu */
   .nav-link {
     text-align: center;
   }
@@ -462,43 +326,43 @@ footer p a:hover {
 
   /* Ajusta o menu colapsado */
   .navbar-collapse {
-    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
+    background-color: rgba(0, 0, 0, 0.9);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* Ocupa a altura total da tela */
-    z-index: 1000; /* Coloca o menu abaixo do botão */
+    height: 100vh;
+    z-index: 1000;
     padding: 1rem;
     display: flex;
-    flex-direction: column; /* Links em coluna */
-    align-items: center; /* Centraliza os links */
-    justify-content: center; /* Centraliza verticalmente */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .navbar-toggler {
     position: relative;
-    z-index: 1100; /* Maior que o menu */
+    z-index: 1100;
   }
 
   /* Alinhar os links centralizados */
   .navbar-nav {
     display: flex;
-    flex-direction: column; /* Coluna no mobile */
-    align-items: center; /* Centraliza horizontalmente */
+    flex-direction: column;
+    align-items: center;
   }
 
   .navbar-nav .nav-link {
-    margin: 0.5rem 0; /* Espaçamento entre os links */
-    color: white; /* Cor dos links */
+    margin: 0.5rem 0;
+    color: white;
   }
 
   .navbar-nav .nav-link:hover {
-    color: #ffcc00; /* Cor de destaque no hover */
+    color: #ffcc00;
   }
 
   .navbar-nav .nav-link.active {
-    color: white !important; /* Garante que o link ativo também tenha a cor branca */
+    color: white !important;
   }
 
   /* Corrigir o z-index do menu */
@@ -511,7 +375,7 @@ footer p a:hover {
 
   /* Adicionar um background para o menu dropdown */
   .navbar-collapse {
-    background-color: white; /* ou outra cor de sua preferência */
+    background-color: white;
   }
 
   /* Garantir alinhamento correto do menu */
@@ -571,16 +435,8 @@ footer p a:hover {
     font-size: 1.1rem;
   }
 
-  .terceira-pagina .sequencia h5 {
-    font-size: 1.4rem;
-  }
-
   .sequencia p {
     font-size: 0.9rem;
-  }
-
-  details img {
-    width: 100%;
   }
 
   footer {
@@ -658,45 +514,40 @@ footer p a:hover {
   /* Corrigir o z-index do menu */
   /* Estilo do menu quando expande */
   .navbar-collapse {
-    position: absolute; /* Para garantir que o menu ocupe toda a tela */
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Garante que o menu ocupe toda a largura */
-    background-color: rgba(
-      0,
-      0,
-      0,
-      0.6
-    ); /* Pode ajustar a cor de fundo para seu gosto */
-    z-index: 1050; /* Garantir que o menu sobreponha outros elementos */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1050;
     display: flex;
-    justify-content: center; /* Centraliza os itens do menu */
-    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center;
+    align-items: center;
   }
 
   .navbar-nav {
     display: flex;
-    flex-direction: column; /* Organiza os itens de menu verticalmente */
+    flex-direction: column;
     text-align: center;
     width: 100%;
   }
 
   /* Certificando-se que o botão de hambúrguer funcione */
   .navbar-toggler {
-    z-index: 1060; /* Garante que o botão de hambúrguer esteja acima do menu */
+    z-index: 1060;
   }
 
   .navbar-nav .nav-link {
-    margin: 0.5rem 0; /* Espaçamento entre os links */
-    color: white; /* Cor dos links */
+    margin: 0.5rem 0;
+    color: white;
   }
 
   .navbar-nav .nav-link:hover {
-    color: #ffcc00; /* Cor de destaque no hover */
+    color: #ffcc00;
   }
 
   .navbar-nav .nav-link.active {
-    color: white !important; /* Garante que o link ativo também tenha a cor branca */
+    color: white !important;
   }
 
   /* Garantir alinhamento correto do menu */
@@ -705,10 +556,10 @@ footer p a:hover {
   }
 
   .mobile-bg {
-    background-attachment: scroll !important; /* Remover o efeito de parallax nos dispositivos móveis */
-    background-size: cover; /* Garante que a imagem cubra 100% da tela */
+    background-attachment: scroll !important;
+    background-size: cover;
     background-position: center;
-    height: 100vh; /* Garante que o fundo ocupe toda a altura da tela */
+    height: 100vh;
   }
 
   .cards {
@@ -742,20 +593,8 @@ footer p a:hover {
     font-size: 0.9rem;
   }
 
-  .terceira-pagina {
-    height: 100%;
-  }
-
-  .terceira-pagina .sequencia h5 {
-    font-size: 1.4rem;
-  }
-
   .sequencia p {
     font-size: 0.9rem;
-  }
-
-  details img {
-    width: 100%;
   }
 
   .indicador-scroll {
