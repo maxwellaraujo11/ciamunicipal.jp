@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfólio | Cia Municipal de Dança</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #000;
+        color: #fff;
+      }
+
+      /* Título */
+      .titulo-portfolio {
+        text-align: center;
+        margin-bottom: 60px;
+        font-weight: 300;
+        letter-spacing: 2px;
+      }
+
+      /* Card do portfólio */
+      .card-portfolio {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      .card-portfolio img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.4s;
+      }
+
+      /* Overlay */
+      .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: 0.4s;
+        padding: 20px;
+      }
+
+      .overlay h5 {
+        margin: 0;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+      }
+
+      /* Hover */
+      .card-portfolio:hover img {
+        transform: scale(1.05);
+      }
+
+      .card-portfolio:hover .overlay {
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- MENU (copie o mesmo do site) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">Cia de Dança</a>
+
+        <div>
+          <a class="nav-link d-inline text-white" href="/index.html">Início</a>
+          <a class="nav-link d-inline text-white" href="/repertorio.html"
+            >Repertório</a
+          >
+          <a class="nav-link d-inline text-white" href="/portfolio.html"
+            >Portfólio</a
+          >
+          <a class="nav-link d-inline text-white" href="/sobre.html">Sobre</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTEÚDO -->
+    <section class="container py-5">
+      <h1 class="titulo-portfolio">PORTFÓLIO</h1>
+
+      <div class="row g-4">
+        <!-- ITEM 1 -->
+        <div class="col-md-4">
+          <a href="/repertorio/vortice.html">
+            <div class="card-portfolio">
+              <img src="/img/repertorios/vortice/IMG_6158.JPG" alt="Vórtice" />
+
+              <div class="overlay">
+                <h5>Vórtice</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="col-md-4">
+          <a href="/repertorio/cordel.html">
+            <div class="card-portfolio">
+              <img src="/img/repertorios/cordel/c7.jpg" alt="Cordel" />
+
+              <div class="overlay">
+                <h5>Cordel</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="col-md-4">
+          <a href="#">
+            <div class="card-portfolio">
+              <img src="/img/exemplo.jpg" alt="Espetáculo" />
+
+              <div class="overlay">
+                <h5>Nome do Trabalho</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

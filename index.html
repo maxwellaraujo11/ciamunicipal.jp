@@ -70,7 +70,7 @@
 
     <header id="#inicio">
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-body">
+      <nav class="navbar navbar-expand-lg bg-body fixed-top">
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -90,11 +90,12 @@
                   >Início</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#segunda-sessao">Repertório</a>
-              </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="#galeria">Sobre nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portifolio</a>
               </li>
             </ul>
           </div>
@@ -134,163 +135,76 @@
     </header>
     <!--    ---------------- FIM MENU DE NAVEGAÇÃO ------------------->
 
-    <!-- ----------------- AREA DE APRESENTAÇÃO ------------------>
-
-    <section class="terceira-pagina slider-right" id="segunda-sessao">
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-
-          <!--<button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="4"
-            aria-label="Slide 5"
-          ></button>-->
-        </div>
-        <div class="carousel-inner">
-
-                                                                            <!-- Carrocel Vortice-->
-      <a href="./repertorio/vortice.html" class="text-decoration-none text-reset">
-          <div class="carousel-item active justify-content-center d-flex bg-black">
-              <img
-                src="/img/repertorios/vortice/IMG_6158.JPG"
-                class="d-block w-75 mx-auto img-fluid width-img"
-                alt="..."
-              />
-              <div class="carousel-caption d-md-block top-0 pt-5 mt-5">
-                <h5>Vórtice</h5>
-                <p>
-                  Inspirado na fluidez dos rios, na força dos redemoinhos e na sincronia dos 
-                  cardumes, Vórtice é um mergulho coreográfico na beleza e potência da natureza. 
-                  A obra celebra a biodiversidade aquática e os fluxos invisíveis que conectam 
-                  os corpos e os ecossistemas.
-                </p>
-              </div>
-          </div>
-      </a>
-
-                                                                            <!-- Carrocel Ponto de Exaustão-->
-          
-      <a href="./repertorio/exaustao.html" class="text-decoration-none text-reset">                                                                     <div class="carousel-item  bg-black">
-            <img
-              src="/img/repertorios/exaustao/ex4.jpeg"
-              class="d-block w-75 mx-auto width-img"
-              alt="..."
-            />
-            <div class="carousel-caption d-md-block top-0 pt-5 mt-5">
-              <h5>Ponto de Exaustão</h5>
-              <p>O ponto de exaustão é alcançado quando uma pessoa atinge o limite de sua capacidade física e mental, 
-                manifestando cansaço extremo, falta de energia e dificuldades para realizar tarefas cotidianas.
-              </p>
-            </div>
-          </div>
-      </a> 
-
-                                                                            <!-- Carrocel Cordel-->
-        <a href="./repertorio/cordel.html" class="text-decoration-none text-reset">                                                                      
-          <div class="carousel-item bg-black">
-            <img
-              src="/img/cordel.png"
-              class="d-block w-75 mx-auto width-img"
-              alt="..."
-            />
-                                                                            
-            <div class="carousel-caption d-md-block top-0 pt-5 mt-5">
-              <h2>Cordel</h4>
-              <p>Coreografia de Evana Arruda</p>
-            </div>
-          </div>
-        </a> 
-                                                                            <!-- Carrocel Sivuca-->
-        <a href="./repertorio/sivuca.html" class="text-decoration-none text-reset">                                                                         
-          <div
-            class="carousel-item bg-black"
-          >
-            <img
-              src="/img/sivuca.png"
-              class="d-block w-75 mx-auto width-img"
-              alt="..."
-            />
-            <div class="carousel-caption d-md-block top-0 pt-5 mt-5">
-              <h4>Poesia do Som</h4>
-              <p>Uma Homenagem ao maestro Sivuca.</p>
-            </div>
-          </div>
-        </a>
-                                                                            <!-- Carrocel Gala Classica-->
-        <!--<a href="./repertorio/classica.html" class="text-decoration-none text-reset"> 
-          <div class="carousel-item bg-black">
-            <img
-              src="/img/gala.png"
-              class="d-block w-75 mx-auto width-img"
-              alt="..."
-            />
-            <div class="carousel-caption d-md-block top-0 pt-5 mt-5">
-              <h5>Gala Clássica e Contemporânea</h5>
-              <p>Uma volta ao mundo em 60 minutos de muita dança.</p>
-            </div>
-          </div>
-        </a> -->
-        <!-- FIM CARROCEL-->
-          
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <!-- PORTIFOLIO -->
+    <section id="portfolio" class="container py-5">
+      <div class="titulo-portfolio">
+        <h1 class="mt-5">PORTFÓLIO</h1>
+        <p>Explore as fotos</p>
       </div>
 
-      <h2 class="text-center mt-5 text-light fs-5" id="liveAlertBtn">
-        “Nosso site está em fase de adaptação para melhorias. Em breve, tudo estará ainda mais fácil e intuitivo para você.”
-      </h2>
+      <div class="row g-4">
+        <!-- ITEM 1 -->
+        <div class="col-md-6">
+          <a href="/repertorio/vortice.html">
+            <div class="card-portfolio">
+              <img src="/img/repertorios/vortice/IMG_6158.JPG" alt="Vórtice" />
+              <div class="overlay">
+                <h5>Vórtice</h5>
+              </div>
+            </div>
+          </a>
+        </div>
 
-     
+        <!-- ITEM 2 -->
+        <div class="col-md-6">
+          <a href="/repertorio/cordel.html">
+            <div class="card-portfolio">
+              <img src="/img/repertorios/cordel/c7.jpg" alt="Cordel" />
+              <div class="overlay">
+                <h5>Cordel</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="col-md-6">
+          <a href="/repertorio/sivuca.html">
+            <div class="card-portfolio">
+              <img src="/img/repertorios/sivuca/S4.png" alt="Sivuca" />
+              <div class="overlay">
+                <h5>Sivuca</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="col-md-6">
+          <a href="/repertorio/exaustao.html">
+            <div class="card-portfolio">
+              <img
+                src="/img/repertorios/exaustao/ex4.jpeg"
+                alt="Ponto de Exaustão"
+              />
+              <div class="overlay">
+                <h5>The Exausted Point</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Mais itens -->
+      </div>
     </section>
+    <!-- FIM PORTIFOLIO -->
 
-    <div class="sequencia" id="galeria">
+    <!-- ----------------- AREA DE APRESENTAÇÃO ------------------>
+
+    <div class="titulo-portfolio" id="galeria">
       <!-- ----------------- ANUNCIO DO ELENCO DE CORRDENADORES ----------->
-      <h5>Coordenação da cia</h5>
-      <p>Clique nas fotos para Conhecer mais</p>
+      <h1>COORDENAÇÃO</h1>
+      <p>Explore as fotos</p>
     </div>
 
     <div class="indicador-scroll">
@@ -395,10 +309,10 @@
 
     <!-- COMEÇANDO ELENCO BAILARINOS -->
 
-    <div class="sequencia">
+    <div class="titulo-portfolio">
       <!-- ----------------- ANUNCIO DO ELENCO DE BAILARINOS ----------->
-      <h5>Elenco da cia</h5>
-      <p>Clique nas fotos para conhecer mais</p>
+      <h1>ELENCO</h1>
+      <p>Explore as fotos</p>
     </div>
 
     <div class="indicador-scroll">
@@ -679,9 +593,9 @@
         <span>Diretor adjunto:</span> Antônio Alcantara <br />
         <span>Coordenação de dança:</span> Geovan Conceição <br />
         <span>Direção da Cia:</span> Stella Paula <br />
-        <span>Professores:</span> Denilce Regina e Maxwell Araujo<br />
+        <span>Professores e Enasaiadores:</span> Denilce Regina, Evana Arruda e
+        Maxwell Araujo<br />
         <span>Coreógrafos:</span> Evana Arruda, Maxwell Araújo<br />
-        <span>Ensaiadores:</span> Denilce Regina, Evana Arruda e Maxwell Araujo<br />
         <span>Elenco:</span> Aline Ferreira, Ana Maria Barroso, Débora Duany,
         <br />
         Eduardo Lima, Gabriel Morais, Jasmim Machado, Joalisson Candido, <br />
