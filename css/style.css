@@ -127,8 +127,9 @@ body {
   color: #f8f8f8;
   font-size: 3rem;
   text-align: center;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
   margin-bottom: 30px;
 }
 
@@ -256,92 +257,7 @@ body {
   }
 }
 
-/* -------------------------------------------------------------------AREA DO FOOTER  */
-
-/*footer {
-  background-color: #000;
-  height: 320px;
-  margin-top: 40px;
-}
-
-footer .logos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 50px;
-  width: 50%;
-  margin: 0 auto;
-}
-
-footer .logos .logocia img {
-  width: 150px;
-  border-radius: 50%;
-}
-
-.logocia {
-  width: 300px;
-}
-
-footer .logos .midias a {
-  color: #f9f9f9;
-  font-size: 2.5rem;
-  margin-inline: 20px;
-  transition: ease-in-out 0.5s;
-}
-
-footer .logos .midias a:hover {
-  transform: scale(1.2);
-}
-
-footer .logos .midias {
-  display: flex;
-  width: 300px;
-  justify-content: center;
-}
-
-footer .logos .realizadores {
-  margin-top: 0px;
-  width: 250px;
-}
-
-.realizadores {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 40px;
-  margin-top: 50px;
-  text-transform: uppercase;
-}
-
-.realizadores img {
-  width: 120px;
-}
-
-hr {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 40px;
-}
-
-footer p {
-  font-size: 0.7rem;
-  text-align: center;
-  margin-top: 40px;
-  color: #c5c2c2;
-}
-
-footer p a {
-  color: #f9f9f9;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 0.7rem;
-  transition: ease-in-out 1s;
-}
-
-footer p a:hover {
-  text-decoration: underline;
-}
+/* -------------------------------------------------------------------AREA DOS TERMOS DE USO --------------------  */
 
 /* ------------------------------------------------ AJUSTES PARA O RESPONSIVO */
 
