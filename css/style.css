@@ -176,17 +176,18 @@ body {
 
 .card-portfolio img {
   width: 100%;
-  height: 400px; /* altura fixa */
-  object-fit: cover; /* recorta mantendo proporção */
+  height: 400px;
+  object-fit: cover;
   transition: 0.4s;
 }
 
-/* Overlay */
+/* Overlay - Agora visível por padrão */
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  opacity: 0;
+  /* Fundo levemente escurecido para dar leitura ao texto */
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 1; /* Texto e fundo aparecem sempre */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,21 +195,34 @@ body {
   transition: 0.4s;
   padding: 20px;
   color: #f9f9f9;
+  z-index: 2;
 }
 
 .overlay h5 {
   margin: 0;
   font-size: 1.4rem;
   letter-spacing: 1px;
+  transition: 0.4s; /* Suaviza o movimento do texto no hover */
 }
 
-/* Hover */
+/* Efeito ao passar o mouse */
 .card-portfolio:hover img {
-  transform: scale(1.05);
+  transform: scale(1.1); /* Aumenta um pouco mais a foto */
+  filter: brightness(0.7); /* Escurece a foto no fundo ao focar */
 }
 
 .card-portfolio:hover .overlay {
-  opacity: 1;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Escurece o overlay no hover para destacar o texto */
+}
+
+.card-portfolio:hover h5 {
+  transform: scale(1.1); /* O texto dá um leve pulo para frente */
+  color: #fff;
 }
 
 /* --------------------------------------------------- TUDO QUE ENVOLVE A TAG DETAILS E SUMMARY  */
