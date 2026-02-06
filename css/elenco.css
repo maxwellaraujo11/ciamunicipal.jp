@@ -23,7 +23,7 @@
 }
 
 .coordenacao::-webkit-scrollbar {
-  height: 15px; /* largura da barra de rolagem */
+  height: 10px; /* largura da barra de rolagem */
 }
 
 .coordenacao::-webkit-scrollbar-track {
@@ -63,7 +63,7 @@
   width: 240px;
   height: 320px;
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: all ease-in-out 1s;
   position: relative;
   bottom: 310px;
@@ -99,6 +99,7 @@
 
 .box-coordenadores:hover p {
   transform: translateX(320px);
+  font-size: 1rem;
 }
 
 .coordenacao a {
