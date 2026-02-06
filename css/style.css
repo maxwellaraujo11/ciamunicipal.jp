@@ -133,7 +133,7 @@ body {
 }
 
 .segunda-pagina p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #c5c2c2;
   text-align: center;
 }
@@ -244,7 +244,7 @@ body {
 
 /* -------------------------------------------------------------------AREA DO FOOTER  */
 
-footer {
+/*footer {
   background-color: #000;
   height: 320px;
   margin-top: 40px;
@@ -256,7 +256,7 @@ footer .logos {
   justify-content: space-around;
   align-items: center;
   padding-top: 50px;
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
 }
 
